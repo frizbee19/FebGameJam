@@ -495,6 +495,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   textbox: {fileID: 7059772333148747626}
+  isOpen: 0
+  textTest: {fileID: 7059772332581294260}
 --- !u!1 &7059772333148747624
 GameObject:
   m_ObjectHideFlags: 0
@@ -561,7 +563,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: a quick brown fox jumped over the lazy dog
+  m_text: a quick brown fox jumps over the lazy dog
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8bd1780577b8eaf43ad60554189eb11e, type: 2}
   m_sharedMaterial: {fileID: 1974643164809013703, guid: 8bd1780577b8eaf43ad60554189eb11e, type: 2}

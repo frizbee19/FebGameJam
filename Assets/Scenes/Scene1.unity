@@ -266,6 +266,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   controller: {fileID: 187176290}
   runSpeed: 40
+  textTest: {fileID: 7059772332933783825}
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0
@@ -839,3 +840,8 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6ea336e93a8128346aad568255a7e6af, type: 3}
+--- !u!1 &7059772332933783825 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7059772333487008123, guid: 6ea336e93a8128346aad568255a7e6af, type: 3}
+  m_PrefabInstance: {fileID: 7059772332933783824}
+  m_PrefabAsset: {fileID: 0}
