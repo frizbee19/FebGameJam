@@ -6,6 +6,7 @@ using TMPro;
 public class Dialogue : MonoBehaviour
 {
     public TMP_Text textbox;
+    public TMP_Text arrow;
     public List<string> pages = new List<string>();
     int curPage = 0;
     public bool isOpen = true;
@@ -15,7 +16,8 @@ public class Dialogue : MonoBehaviour
     //used to print the first x letters of the text
     int cCount = 0;
     //changes the pace at which chars appear
-    float pace = 10.0f;
+    //in seconds
+    float pace = 0.05f;
     float elapsed = 0f;
     // Start is called before the first frame update
     void Start()
@@ -23,6 +25,7 @@ public class Dialogue : MonoBehaviour
         if(pages.Count > 0) 
         {
             textbox.text = pages[0];
+            arrow.text = "";
         }
     }
 
@@ -42,6 +45,15 @@ public class Dialogue : MonoBehaviour
             //checks if all of the characters are on the page
             if(cCount >= pages[curPage].Length) 
             {
+                //prints the "next" arrow when at end of page except last page
+                if(curPage < pages.Count - 1) 
+                {
+                    arrow.text = ">";
+                }
+                else
+                {
+                    arrow.text = "x";
+                }
                 elapsed = 0;
                 if(Input.GetKeyDown(KeyCode.S) || Input.GetKeyDown(KeyCode.D) || Input.GetKeyDown(KeyCode.DownArrow) ||
                 Input.GetKeyDown(KeyCode.RightArrow) || Input.GetKeyDown(KeyCode.Return) || Input.GetKeyDown(KeyCode.Space))
@@ -49,12 +61,15 @@ public class Dialogue : MonoBehaviour
                     //scroll through textbox using any movement key
                     if(curPage >= pages.Count - 1) 
                     {
+                        //exits the textbox
                         isOpen = false;
                         Movement.pause = false;
                         textTest.SetActive(false);
                     }
                     else
                     {
+                        //resets pace of chars
+                        arrow.text = "";
                         ++curPage;
                         cCount = 0;
                     }
@@ -62,11 +77,15 @@ public class Dialogue : MonoBehaviour
             }
             else
             {
+                //writes chars at specified pace
                 elapsed += Time.deltaTime;
-                if(elapsed % pace == 0) 
+                if(elapsed > pace) 
                 {
-                    textbox.text = pages[curPage].Substring(0, ++cCount);
+                    ++cCount;
+                    textbox.text = pages[curPage].Substring(0, cCount);
+                    elapsed = 0;
                 }
+                //skip ahead
                 if(Input.GetKeyDown(KeyCode.S) || Input.GetKeyDown(KeyCode.D) || Input.GetKeyDown(KeyCode.DownArrow) ||
                 Input.GetKeyDown(KeyCode.RightArrow) || Input.GetKeyDown(KeyCode.Return) || Input.GetKeyDown(KeyCode.Space)) 
                 {

@@ -811,7 +811,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3758862681294202868, guid: 6ea336e93a8128346aad568255a7e6af, type: 3}
       propertyPath: pages.Array.data[0]
-      value: '"this is a test"'
+      value: '"this is a testsadfasdfsadfsadfasdfasdfasdfasdf"'
       objectReference: {fileID: 0}
     - target: {fileID: 3758862681294202868, guid: 6ea336e93a8128346aad568255a7e6af, type: 3}
       propertyPath: pages.Array.data[1]
