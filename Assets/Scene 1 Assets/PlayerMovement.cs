@@ -5,14 +5,17 @@ using UnityEngine;
 public class PlayerMovement : MonoBehaviour
 {
     public Movement controller;
-    float horizontalMove = 0f;
+    public Animator animator;
     public float runSpeed = 40f;
+    float horizontalMove = 0f;
     bool jump = false;
     bool crouch = false;
 
     // Update is called once per frame
-    void Update()
-    {
+    void Update() {
+
+        animator.SetFloat("Horizontal", Input.GetAxis("Horizontal"));
+
         horizontalMove = Input.GetAxisRaw("Horizontal") * runSpeed;
         if (Input.GetButtonDown("Jump"))
         {
