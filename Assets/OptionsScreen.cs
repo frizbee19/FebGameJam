@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
+using UnityEngine.Audio;
 
 public class OptionsScreen : MonoBehaviour
 {
@@ -11,6 +12,9 @@ public class OptionsScreen : MonoBehaviour
     public List<ResItem> resolutions = new List<ResItem>();
     private int selectedResolution;
     public TMP_Text resolutionLabel;
+    public AudioMixer theMixer;
+    public TMP_Text masterLabel, musicLabel, SFXLabel;
+    public Slider masterSlider, musicSlider, SFXSlider;
 
     // Start is called before the first frame update
     void Start()
@@ -44,6 +48,18 @@ public class OptionsScreen : MonoBehaviour
             selectedResolution = resolutions.Count - 1;
             UpdateResLabel();
         }
+
+        float vol = 0f;
+        theMixer.GetFloat("MasterVol", out vol);
+        masterSlider.value = vol;
+        theMixer.GetFloat("MusicVol", out vol);
+        musicSlider.value = vol;
+        theMixer.GetFloat("SFXVol", out vol);
+        SFXSlider.value = vol;
+
+        masterLabel.text = Mathf.RoundToInt(masterSlider.value *5/3+100).ToString();
+        musicLabel.text = Mathf.RoundToInt(musicSlider.value *5/3+100).ToString();
+        SFXLabel.text = Mathf.RoundToInt(SFXSlider.value *5/3+100).ToString();
     }
 
     // Update is called once per frame
@@ -91,7 +107,26 @@ public class OptionsScreen : MonoBehaviour
         Screen.SetResolution(resolutions[selectedResolution].horizontal, resolutions[selectedResolution].vertical, fullscreenTog.isOn);
     }
 
-    
+    public void SetMasterVol()
+    {
+        masterLabel.text = Mathf.RoundToInt(masterSlider.value *5/3+100).ToString();
+        theMixer.SetFloat("MasterVol", masterSlider.value);
+        PlayerPrefs.SetFloat("MasterVol", masterSlider.value);
+    }
+
+    public void SetMusicVol()
+    {
+        musicLabel.text = Mathf.RoundToInt(musicSlider.value *5/3+100).ToString();
+        theMixer.SetFloat("MusicVol", musicSlider.value);
+        PlayerPrefs.SetFloat("MusicVol", musicSlider.value);
+    }
+
+    public void SetSFXVol()
+    {
+        SFXLabel.text = Mathf.RoundToInt((SFXSlider.value *5/3+100)).ToString();
+        theMixer.SetFloat("SFXVol", SFXSlider.value);
+        PlayerPrefs.SetFloat("SFXVol", SFXSlider.value);
+    }
 }
 [System.Serializable]
 public class ResItem
