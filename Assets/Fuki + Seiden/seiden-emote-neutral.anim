@@ -6,7 +6,7 @@ AnimationClip:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: fuki-walk
+  m_Name: seiden-emote-neutral
   serializedVersion: 6
   m_Legacy: 0
   m_Compressed: 0
@@ -20,18 +20,14 @@ AnimationClip:
   m_PPtrCurves:
   - curve:
     - time: 0
-      value: {fileID: 1750011889439919240, guid: 2ce0ce2028bc94666b29a170edb2427e, type: 3}
-    - time: 0.125
-      value: {fileID: -2307464743885467549, guid: 2ce0ce2028bc94666b29a170edb2427e, type: 3}
+      value: {fileID: -8109058881888065430, guid: f99a1e623eb554e4aa4314aba18b2531, type: 3}
     - time: 0.25
-      value: {fileID: 6588642684426670693, guid: 2ce0ce2028bc94666b29a170edb2427e, type: 3}
-    - time: 0.375
-      value: {fileID: 1273522087630776360, guid: 2ce0ce2028bc94666b29a170edb2427e, type: 3}
+      value: {fileID: 5354992726988596434, guid: f99a1e623eb554e4aa4314aba18b2531, type: 3}
     attribute: m_Sprite
     path: 
     classID: 212
     script: {fileID: 0}
-  m_SampleRate: 8
+  m_SampleRate: 4
   m_WrapMode: 0
   m_Bounds:
     m_Center: {x: 0, y: 0, z: 0}
@@ -46,10 +42,8 @@ AnimationClip:
       customType: 23
       isPPtrCurve: 1
     pptrCurveMapping:
-    - {fileID: 1750011889439919240, guid: 2ce0ce2028bc94666b29a170edb2427e, type: 3}
-    - {fileID: -2307464743885467549, guid: 2ce0ce2028bc94666b29a170edb2427e, type: 3}
-    - {fileID: 6588642684426670693, guid: 2ce0ce2028bc94666b29a170edb2427e, type: 3}
-    - {fileID: 1273522087630776360, guid: 2ce0ce2028bc94666b29a170edb2427e, type: 3}
+    - {fileID: -8109058881888065430, guid: f99a1e623eb554e4aa4314aba18b2531, type: 3}
+    - {fileID: 5354992726988596434, guid: f99a1e623eb554e4aa4314aba18b2531, type: 3}
   m_AnimationClipSettings:
     serializedVersion: 2
     m_AdditiveReferencePoseClip: {fileID: 0}
