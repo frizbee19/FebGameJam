@@ -7,6 +7,7 @@ public class Dialogue : MonoBehaviour
 {
     public TMP_Text textbox;
     public TMP_Text arrow;
+    public AudioManager audioManager;
     public List<string> pages = new List<string>();
     int curPage = 0;
     public bool isOpen = true;
@@ -22,7 +23,7 @@ public class Dialogue : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        if(pages.Count > 0) 
+        if (pages.Count > 0) 
         {
             textbox.text = pages[0];
             arrow.text = "";
@@ -84,6 +85,7 @@ public class Dialogue : MonoBehaviour
                     ++cCount;
                     textbox.text = pages[curPage].Substring(0, cCount);
                     elapsed = 0;
+                    audioManager.Play("blip");
                 }
                 //skip ahead
                 if(Input.GetKeyDown(KeyCode.S) || Input.GetKeyDown(KeyCode.D) || Input.GetKeyDown(KeyCode.DownArrow) ||
