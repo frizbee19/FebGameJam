@@ -7,11 +7,6 @@ public class MenuController : MonoBehaviour
 {
     public GameObject pauseMenu;
     public bool isPaused;
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
 
     // Update is called once per frame
     void Update()
@@ -41,6 +36,7 @@ public class MenuController : MonoBehaviour
 
     public void ReturnToMain()
     {
+        Time.timeScale = 1f;
         SceneManager.LoadScene("Main Menu");
     }
 }
