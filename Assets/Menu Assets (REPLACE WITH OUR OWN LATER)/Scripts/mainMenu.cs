@@ -42,7 +42,7 @@ public class mainMenu : MonoBehaviour
     }
 
     public void CloseCredits()
-    {
+    {  
         creditsScreen.SetActive(false);
     }
 
