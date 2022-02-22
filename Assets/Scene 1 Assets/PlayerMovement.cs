@@ -5,7 +5,7 @@ using UnityEngine;
 public class PlayerMovement : MonoBehaviour
 {
     public Movement controller;
-    public Animator animator;
+    //public Animator animator;
     public float runSpeed = 40f;
     float horizontalMove = 0f;
     bool jump = false;
@@ -14,7 +14,7 @@ public class PlayerMovement : MonoBehaviour
     // Update is called once per frame
     void Update() {
         // Horizontal value is for the animation state machine. No code required, wow!
-        animator.SetFloat("Horizontal", Input.GetAxis("Horizontal"));
+        //animator.SetFloat("Horizontal", Input.GetAxis("Horizontal"));
 
         horizontalMove = Input.GetAxisRaw("Horizontal") * runSpeed;
         

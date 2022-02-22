@@ -21,6 +21,7 @@ public class Movement : MonoBehaviour
 	private bool m_FacingRight = true;  // For determining which way the player is currently facing.
 	private Vector3 m_Velocity = Vector3.zero;
 	public static bool pause = false;
+	private bool dj = false;
 
 	[Header("Events")]
 	[Space]
@@ -135,6 +136,11 @@ public class Movement : MonoBehaviour
 				// Add a vertical force to the player.
 				m_Grounded = false;
 				m_Rigidbody2D.AddForce(new Vector2(0f, m_JumpForce));
+				dj = false;
+			}else if (jump && dj == false){
+				m_Grounded = false;
+				m_Rigidbody2D.AddForce(new Vector2(0f, m_JumpForce));
+				dj = true;
 			}
 			}
 	}

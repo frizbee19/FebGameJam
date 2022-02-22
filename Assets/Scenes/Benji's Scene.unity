@@ -147,7 +147,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 15059982}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: -0.73, z: 0}
+  m_LocalPosition: {x: 0, y: -0.747, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 101316509}
@@ -204,7 +204,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   controller: {fileID: 101316514}
-  animator: {fileID: 1494078893}
   runSpeed: 40
 --- !u!58 &101316511
 CircleCollider2D:
@@ -235,7 +234,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.06, y: 0.19}
+  m_Offset: {x: 0.06, y: 0.31}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -246,7 +245,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.76, y: 0.63}
+  m_Size: {x: 0.76, y: 0.85}
   m_EdgeRadius: 0
 --- !u!50 &101316513
 Rigidbody2D:
@@ -281,13 +280,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 90da90214d3bb324a8ed8f5b046ba4b9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_JumpForce: 800
+  m_JumpForce: 700
   m_CrouchSpeed: 0.4
   m_MovementSmoothing: 0.05
   m_AirControl: 1
   m_WhatIsGround:
     serializedVersion: 2
-    m_Bits: 55
+    m_Bits: 567
   m_GroundCheck: {fileID: 15059983}
   m_CeilingCheck: {fileID: 838052152}
   m_CrouchDisableCollider: {fileID: 101316512}
@@ -523,7 +522,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 717061314}
-  m_Layer: 3
+  m_Layer: 9
   m_Name: Ground Check
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -538,7 +537,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 717061313}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: -0.73, z: 0}
+  m_LocalPosition: {x: 0, y: -0.716, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1641807371}
@@ -553,7 +552,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 804516416}
-  m_Layer: 3
+  m_Layer: 9
   m_Name: Ceiling Check
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -568,7 +567,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 804516415}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0.64, z: 0}
+  m_LocalPosition: {x: 0, y: 0.746, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1641807371}
@@ -598,7 +597,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 838052151}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0.79, z: 0}
+  m_LocalPosition: {x: 0, y: 0.767, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 101316509}
@@ -931,7 +930,7 @@ GameObject:
   - component: {fileID: 1641807375}
   - component: {fileID: 1641807374}
   - component: {fileID: 1641807373}
-  m_Layer: 3
+  m_Layer: 9
   m_Name: Char Movement
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -984,7 +983,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.06, y: 0.19}
+  m_Offset: {x: 0.06, y: 0.31}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -995,7 +994,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.76, y: 0.63}
+  m_Size: {x: 0.76, y: 0.92}
   m_EdgeRadius: 0
 --- !u!50 &1641807375
 Rigidbody2D:
@@ -1036,7 +1035,7 @@ MonoBehaviour:
   m_AirControl: 1
   m_WhatIsGround:
     serializedVersion: 2
-    m_Bits: 55
+    m_Bits: 63
   m_GroundCheck: {fileID: 717061314}
   m_CeilingCheck: {fileID: 804516416}
   m_CrouchDisableCollider: {fileID: 1641807374}
@@ -1113,7 +1112,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2067235194}
   - component: {fileID: 2067235195}
-  m_Layer: 3
+  m_Layer: 9
   m_Name: Fuki
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1197,7 +1196,7 @@ GameObject:
   - component: {fileID: 2105389526}
   - component: {fileID: 2105389527}
   - component: {fileID: 2105389528}
-  m_Layer: 3
+  m_Layer: 9
   m_Name: Char Art
   m_TagString: Untagged
   m_Icon: {fileID: 0}
