@@ -1540,8 +1540,20 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 2814996999539020984, guid: 6ea336e93a8128346aad568255a7e6af, type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: 7eb4fdbc838e84a8e83347d54fd48aa6, type: 2}
+    - target: {fileID: 3633192429854996722, guid: 6ea336e93a8128346aad568255a7e6af, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 450
+      objectReference: {fileID: 0}
     - target: {fileID: 3758862681294202868, guid: 6ea336e93a8128346aad568255a7e6af, type: 3}
       propertyPath: isOpen
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3758862681294202868, guid: 6ea336e93a8128346aad568255a7e6af, type: 3}
+      propertyPath: isTalking
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3758862681294202868, guid: 6ea336e93a8128346aad568255a7e6af, type: 3}
@@ -1550,6 +1562,10 @@ PrefabInstance:
       objectReference: {fileID: 1472461654}
     - target: {fileID: 3758862681294202868, guid: 6ea336e93a8128346aad568255a7e6af, type: 3}
       propertyPath: pages.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 3758862681294202868, guid: 6ea336e93a8128346aad568255a7e6af, type: 3}
+      propertyPath: emotes.Array.size
       value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 3758862681294202868, guid: 6ea336e93a8128346aad568255a7e6af, type: 3}
@@ -1563,6 +1579,34 @@ PrefabInstance:
     - target: {fileID: 3758862681294202868, guid: 6ea336e93a8128346aad568255a7e6af, type: 3}
       propertyPath: pages.Array.data[2]
       value: congrats you won
+      objectReference: {fileID: 0}
+    - target: {fileID: 3758862681294202868, guid: 6ea336e93a8128346aad568255a7e6af, type: 3}
+      propertyPath: emotes.Array.data[0]
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3758862681294202868, guid: 6ea336e93a8128346aad568255a7e6af, type: 3}
+      propertyPath: emotes.Array.data[1]
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 3758862681294202868, guid: 6ea336e93a8128346aad568255a7e6af, type: 3}
+      propertyPath: emotes.Array.data[2]
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4883996976931216989, guid: 6ea336e93a8128346aad568255a7e6af, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: -8109058881888065430, guid: f99a1e623eb554e4aa4314aba18b2531, type: 3}
+    - target: {fileID: 4883996976931216989, guid: 6ea336e93a8128346aad568255a7e6af, type: 3}
+      propertyPath: m_WasSpriteAssigned
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5606136381310298672, guid: 6ea336e93a8128346aad568255a7e6af, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: -8109058881888065430, guid: f99a1e623eb554e4aa4314aba18b2531, type: 3}
+    - target: {fileID: 5606136381310298672, guid: 6ea336e93a8128346aad568255a7e6af, type: 3}
+      propertyPath: m_Enabled
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7059772332581294261, guid: 6ea336e93a8128346aad568255a7e6af, type: 3}
       propertyPath: m_Pivot.x
@@ -1622,7 +1666,7 @@ PrefabInstance:
       objectReference: {fileID: 519420031}
     - target: {fileID: 7059772332581294264, guid: 6ea336e93a8128346aad568255a7e6af, type: 3}
       propertyPath: m_RenderMode
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7059772332581294264, guid: 6ea336e93a8128346aad568255a7e6af, type: 3}
       propertyPath: m_SortingOrder
@@ -1696,6 +1740,22 @@ PrefabInstance:
       propertyPath: m_SortingOrder
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 8637085924552831791, guid: 6ea336e93a8128346aad568255a7e6af, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 38.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 8637085924552831791, guid: 6ea336e93a8128346aad568255a7e6af, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 38.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 8637085924552831791, guid: 6ea336e93a8128346aad568255a7e6af, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -294.94
+      objectReference: {fileID: 0}
+    - target: {fileID: 8637085924552831791, guid: 6ea336e93a8128346aad568255a7e6af, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -145.13
+      objectReference: {fileID: 0}
     - target: {fileID: 8800572322419699558, guid: 6ea336e93a8128346aad568255a7e6af, type: 3}
       propertyPath: m_LocalRotation.w
       value: 0.6883546
@@ -1712,5 +1772,9 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: -93
       objectReference: {fileID: 0}
+    - target: {fileID: 9032403516113401987, guid: 6ea336e93a8128346aad568255a7e6af, type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: 7eb4fdbc838e84a8e83347d54fd48aa6, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6ea336e93a8128346aad568255a7e6af, type: 3}
