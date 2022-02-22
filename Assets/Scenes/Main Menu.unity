@@ -6105,6 +6105,22 @@ PrefabInstance:
       propertyPath: m_Name
       value: Audio Manager
       objectReference: {fileID: 0}
+    - target: {fileID: 7572907803847010130, guid: b30f4c52408981c4c9fee33982f969d0, type: 3}
+      propertyPath: SFX
+      value: 
+      objectReference: {fileID: -7289459987239430450, guid: c97f543260ac6cb409ed0760fe78c9a9, type: 2}
+    - target: {fileID: 7572907803847010130, guid: b30f4c52408981c4c9fee33982f969d0, type: 3}
+      propertyPath: Music
+      value: 
+      objectReference: {fileID: -4387083310922404584, guid: c97f543260ac6cb409ed0760fe78c9a9, type: 2}
+    - target: {fileID: 7572907803847010130, guid: b30f4c52408981c4c9fee33982f969d0, type: 3}
+      propertyPath: Master
+      value: 
+      objectReference: {fileID: 24300002, guid: c97f543260ac6cb409ed0760fe78c9a9, type: 2}
+    - target: {fileID: 7572907803847010130, guid: b30f4c52408981c4c9fee33982f969d0, type: 3}
+      propertyPath: sounds.Array.data[0].output
+      value: SFX
+      objectReference: {fileID: 0}
     - target: {fileID: 7572907803847010131, guid: b30f4c52408981c4c9fee33982f969d0, type: 3}
       propertyPath: m_RootOrder
       value: 5

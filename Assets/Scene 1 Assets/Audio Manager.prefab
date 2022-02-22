@@ -46,7 +46,17 @@ MonoBehaviour:
   theMixer: {fileID: 24100000, guid: c97f543260ac6cb409ed0760fe78c9a9, type: 2}
   sounds:
   - name: blip
+    output: SFX
     clip: {fileID: 8300000, guid: 19f8faed41b1b3b49b4f52c1173ad212, type: 3}
     volume: 1
     pitch: 1
     source: {fileID: 0}
+  - name: blop
+    output: SFX
+    clip: {fileID: 8300000, guid: 5cc8ce95d298d884dbd32a9e81713bf1, type: 3}
+    volume: 1
+    pitch: 1
+    source: {fileID: 0}
+  SFX: {fileID: -7289459987239430450, guid: c97f543260ac6cb409ed0760fe78c9a9, type: 2}
+  Music: {fileID: -4387083310922404584, guid: c97f543260ac6cb409ed0760fe78c9a9, type: 2}
+  Master: {fileID: 24300002, guid: c97f543260ac6cb409ed0760fe78c9a9, type: 2}

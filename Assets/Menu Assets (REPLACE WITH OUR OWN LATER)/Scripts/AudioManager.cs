@@ -9,7 +9,11 @@ public class AudioManager : MonoBehaviour
 
     public AudioMixer theMixer;
     public Sound[] sounds;
-    
+    public AudioMixerGroup SFX;
+    public AudioMixerGroup Music;
+    public AudioMixerGroup Master;
+    //public AudioSource.AudioMixerGroup outputAudioMixerGroup;
+
 
     void Awake()
     {
@@ -19,6 +23,19 @@ public class AudioManager : MonoBehaviour
             s.source.clip = s.clip;
             s.source.volume = s.volume;
             s.source.pitch = s.pitch;
+            if (s.output == "SFX")
+            {
+                s.source.outputAudioMixerGroup = SFX;
+            }
+            if (s.output == "Music")
+            {
+                s.source.outputAudioMixerGroup = Music;
+            }
+            if (s.output == "Master")
+            {
+                s.source.outputAudioMixerGroup = Master;
+            }
+            //s.source.outputAudioMixerGroup = s.output;
         }
     }
     void Start()

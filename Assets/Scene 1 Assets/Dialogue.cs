@@ -85,7 +85,16 @@ public class Dialogue : MonoBehaviour
                     ++cCount;
                     textbox.text = pages[curPage].Substring(0, cCount);
                     elapsed = 0;
-                    audioManager.Play("blip");
+                    int RNGSound = Random.Range(0, 2);
+                    if (RNGSound == 0) {
+                        audioManager.Play("blip");
+                        Debug.Log("blip");
+                    }
+                    else
+                    {
+                        audioManager.Play("blop");
+                        Debug.Log("blop");
+                    }
                 }
                 //skip ahead
                 if(Input.GetKeyDown(KeyCode.S) || Input.GetKeyDown(KeyCode.D) || Input.GetKeyDown(KeyCode.DownArrow) ||
