@@ -19,31 +19,33 @@ public class WallTrigger : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (entered && counter >=150)
-        {
-            cam.transform.position -= moveCam;
-            cat.transform.position -= moveCat;
-            entered = false;
-        }
-        else
-        {
-            counter++;
-        }
+            counter++;   
     }
 
     void OnTriggerEnter2D(Collider2D col)
     {
-        if (!entered)
+        if (!entered && counter >= 120)
         {
             entered = true;
 
-            Debug.Log("Trigger detected");
+            //Debug.Log("Move Cam Right");
             cam.transform.position += moveCam;
             cat.transform.position += moveCat;
             Debug.Log(counter);
             counter = 0;
             //PlayerMovement.ChangePos(1, 2);
         }
+        else if (counter >= 120 && entered)
+        {
+            //Debug.Log("Moved cam left");
+            Debug.Log(counter);
+            cam.transform.position -= moveCam;
+            cat.transform.position -= moveCat;
+            entered = false;
+
+            counter = 0;
+        }
+
     }
 
     /*void Interact(Collider2D col, ){
