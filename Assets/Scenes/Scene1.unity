@@ -265,6 +265,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   controller: {fileID: 187176290}
+  animator: {fileID: 0}
   runSpeed: 40
 --- !u!1 &519420028
 GameObject:
@@ -809,6 +810,14 @@ PrefabInstance:
       propertyPath: pages.Array.data[2]
       value: congrats you won
       objectReference: {fileID: 0}
+    - target: {fileID: 7059772333148747626, guid: 6ea336e93a8128346aad568255a7e6af, type: 3}
+      propertyPath: m_fontAsset
+      value: 
+      objectReference: {fileID: 11400000, guid: 8bd1780577b8eaf43ad60554189eb11e, type: 2}
+    - target: {fileID: 7059772333148747626, guid: 6ea336e93a8128346aad568255a7e6af, type: 3}
+      propertyPath: m_sharedMaterial
+      value: 
+      objectReference: {fileID: -6507631187338287659, guid: 8bd1780577b8eaf43ad60554189eb11e, type: 2}
     - target: {fileID: 7059772333487008123, guid: 6ea336e93a8128346aad568255a7e6af, type: 3}
       propertyPath: m_Name
       value: Textbox
