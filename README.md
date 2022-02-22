@@ -8,3 +8,16 @@
 1. Go to *Projects* > *Add project from disk*
 1. Navigate to the cloned project folder from GitKraken
 1. Open the project
+
+---
+
+## Seiden emote animations
+
+```
+0: Neutral idle
+1: Neutral talking
+2: Annoyed idle
+3: Annoyed talking
+4: Blushing idle
+5: Blushing talking
+```
