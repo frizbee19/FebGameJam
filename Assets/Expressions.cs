@@ -14,6 +14,6 @@ public class Expressions : MonoBehaviour {
     // Update is called once per frame
     void Update() {
         counter++;
-        animator.SetInteger("Emotion", (counter / 200) % 3);
+        animator.SetInteger("Animation", (counter / 400) % 6);
     }
 }
