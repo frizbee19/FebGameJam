@@ -12,7 +12,7 @@ public class Dialogue : MonoBehaviour
     public List<string> pages = new List<string>();
     public List<int> emotes = new List<int>();
     int curPage = 0;
-    public bool isOpen = true;
+    public bool isOpen = false;
     //used to activate/deactivate test object
     //activate through outside means probably
     public GameObject textTest;
@@ -29,7 +29,6 @@ public class Dialogue : MonoBehaviour
     {
         if (pages.Count > 0) 
         {
-            textbox.text = pages[0];
             arrow.text = "";
         }
     }

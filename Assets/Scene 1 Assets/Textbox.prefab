@@ -607,8 +607,10 @@ MonoBehaviour:
   arrow: {fileID: 7395190149993767727}
   audioManager: {fileID: 0}
   pages: []
+  emotes: 
   isOpen: 0
   textTest: {fileID: 7059772332581294260}
+  isTalking: 0
 --- !u!1 &7059772333148747624
 GameObject:
   m_ObjectHideFlags: 0
@@ -808,7 +810,7 @@ GameObject:
   - component: {fileID: -2532599903388458229}
   m_Layer: 0
   m_Name: Textbox
-  m_TagString: Untagged
+  m_TagString: Event
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
