@@ -5,12 +5,14 @@ using TMPro;
 
 public class Dialogue : MonoBehaviour
 {
+    public Animator animator;
     public TMP_Text textbox;
     public TMP_Text arrow;
     public AudioManager audioManager;
     public List<string> pages = new List<string>();
+    public List<int> emotes = new List<int>();
     int curPage = 0;
-    public bool isOpen = true;
+    public bool isOpen = false;
     //used to activate/deactivate test object
     //activate through outside means probably
     public GameObject textTest;
@@ -20,12 +22,13 @@ public class Dialogue : MonoBehaviour
     //in seconds
     float pace = 0.05f;
     float elapsed = 0f;
+    //turns off and on sound
+    public bool isTalking;
     // Start is called before the first frame update
     void Start()
     {
         if (pages.Count > 0) 
         {
-            textbox.text = pages[0];
             arrow.text = "";
         }
     }
@@ -46,6 +49,10 @@ public class Dialogue : MonoBehaviour
             //checks if all of the characters are on the page
             if(cCount >= pages[curPage].Length) 
             {
+                //stops the animation
+                if(animator != null && emotes.Count == pages.Count) {
+                    animator.SetInteger("Animation",emotes[curPage] - 1);
+                }
                 //prints the "next" arrow when at end of page except last page
                 if(curPage < pages.Count - 1) 
                 {
@@ -78,6 +85,10 @@ public class Dialogue : MonoBehaviour
             }
             else
             {
+                //starts the animation
+                if(animator != null && emotes.Count == pages.Count) {
+                    animator.SetInteger("Animation",emotes[curPage]);
+                }
                 //writes chars at specified pace
                 elapsed += Time.deltaTime;
                 if(elapsed > pace) 
@@ -85,15 +96,17 @@ public class Dialogue : MonoBehaviour
                     ++cCount;
                     textbox.text = pages[curPage].Substring(0, cCount);
                     elapsed = 0;
-                    int RNGSound = Random.Range(0, 2);
-                    if (RNGSound == 0) {
-                        audioManager.Play("blip");
-                        Debug.Log("blip");
-                    }
-                    else
-                    {
-                        audioManager.Play("blop");
-                        Debug.Log("blop");
+                    if(isTalking){
+                        int RNGSound = Random.Range(0, 2);
+                        if (RNGSound == 0) {
+                            audioManager.Play("blip");
+                            Debug.Log("blip");
+                        }
+                        else
+                        {
+                            audioManager.Play("blop");
+                            Debug.Log("blop");
+                        }
                     }
                 }
                 //skip ahead
