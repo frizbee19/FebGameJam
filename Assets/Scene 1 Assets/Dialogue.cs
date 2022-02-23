@@ -16,6 +16,7 @@ public class Dialogue : MonoBehaviour
     //used to activate/deactivate test object
     //activate through outside means probably
     public GameObject textTest;
+    public GameObject headText;
     //used to print the first x letters of the text
     int cCount = 0;
     //changes the pace at which chars appear
@@ -73,6 +74,9 @@ public class Dialogue : MonoBehaviour
                         isOpen = false;
                         Movement.pause = false;
                         textTest.SetActive(false);
+                        headText.SetActive(false);
+                        cCount = 0;
+                        curPage = 0;
                     }
                     else
                     {
