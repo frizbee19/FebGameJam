@@ -24,6 +24,10 @@ public class WallTrigger : MonoBehaviour
 
     void OnTriggerEnter2D(Collider2D col)
     {
+        if (Input.GetButtonDown("Interact"))
+        {
+            Interact(col);
+        }
         if (!entered && counter >= 120)
         {
             entered = true;
@@ -31,14 +35,14 @@ public class WallTrigger : MonoBehaviour
             //Debug.Log("Move Cam Right");
             cam.transform.position += moveCam;
             cat.transform.position += moveCat;
-            Debug.Log(counter);
+            //Debug.Log(counter);
             counter = 0;
             //PlayerMovement.ChangePos(1, 2);
         }
         else if (counter >= 120 && entered)
         {
             //Debug.Log("Moved cam left");
-            Debug.Log(counter);
+            //Debug.Log(counter);
             cam.transform.position -= moveCam;
             cat.transform.position -= moveCat;
             entered = false;
@@ -46,6 +50,11 @@ public class WallTrigger : MonoBehaviour
             counter = 0;
         }
 
+    }
+
+    private void Interact(Collider2D col)
+    {
+        Debug.Log("Interact Buttion Pressed!!");
     }
 
     /*void Interact(Collider2D col, ){

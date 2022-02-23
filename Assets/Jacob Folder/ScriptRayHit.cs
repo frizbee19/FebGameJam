@@ -20,8 +20,8 @@ public class ScriptRayHit : MonoBehaviour
         hit = Physics2D.Raycast(transform.position, transform.TransformDirection(Vector2.right), 4f);
         if (hit)
         {
-            Debug.Log(" Hit a wall "+ hit.collider.name);
-            Debug.Log(counter);
+            //Debug.Log(" Hit a wall "+ hit.collider.name);
+            //Debug.Log(counter);
         }
         counter++;
     }
