@@ -3,7 +3,9 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - AudioManager
+  - Event
   layers:
   - Default
   - TransparentFX
@@ -12,16 +14,16 @@ TagManager:
   - Water
   - UI
   - Background
-  - Interactables
-  - Platforms
+  - 
+  - 
+  - Fuki
   - 
   - 
   - 
   - 
   - 
   - 
-  - 
-  - 
+  - 'Pause Screen '
   - 
   - 
   - 
@@ -38,9 +40,18 @@ TagManager:
   - 
   - 
   m_SortingLayers:
+  - name: Background Layer
+    uniqueID: 412842487
+    locked: 0
   - name: Default
     uniqueID: 0
     locked: 0
   - name: Player layer
     uniqueID: 1027733709
+    locked: 0
+  - name: Fuki
+    uniqueID: 1196539433
+    locked: 0
+  - name: UI layer
+    uniqueID: 1458967083
     locked: 0
