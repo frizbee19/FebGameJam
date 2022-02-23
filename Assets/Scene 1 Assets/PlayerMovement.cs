@@ -34,4 +34,14 @@ public class PlayerMovement : MonoBehaviour
         controller.Move(horizontalMove * Time.fixedDeltaTime, crouch, jump);
         jump = false;
     }
+
+
+    public void ChangePos(double x, double y)
+    {
+        transform.position = new Vector2();
+    }
+    /*void OnTriggerEnter2D(Collider2D col)
+    {
+        Debug.Log("Trigger Detected!");
+    }*/
 }
