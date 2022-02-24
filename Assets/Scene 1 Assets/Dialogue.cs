@@ -6,6 +6,7 @@ using TMPro;
 public class Dialogue : MonoBehaviour
 {
     public Animator animator;
+    public RuntimeAnimatorController controller;
     public TMP_Text textbox;
     public TMP_Text arrow;
     public AudioManager audioManager;
@@ -31,6 +32,7 @@ public class Dialogue : MonoBehaviour
         {
             arrow.text = "";
         }
+        animator.runtimeAnimatorController = controller;
     }
 
     //Adds a page of text
@@ -72,7 +74,9 @@ public class Dialogue : MonoBehaviour
                         //exits the textbox
                         isOpen = false;
                         Movement.pause = false;
-                        textTest.SetActive(false);
+                        Destroy(textTest);
+                        cCount = 0;
+                        curPage = 0;
                     }
                     else
                     {

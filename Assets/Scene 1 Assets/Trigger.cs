@@ -22,6 +22,7 @@ public abstract class Trigger : MonoBehaviour
     //checks if player is in range of the trigger
     private void OnTriggerEnter2D(Collider2D other) {
         if(other.CompareTag("Player")) {
+            Debug.Log("entered");
             isActive = true;
         }
     }
@@ -29,6 +30,7 @@ public abstract class Trigger : MonoBehaviour
     private void OnTriggerExit2D(Collider2D other) {
         if(other.CompareTag("Player")) {
             isActive = false;
+            Debug.Log("exit");
         }
         if(forceInteract && repeatable) {
             hasOccurred = false;
@@ -37,6 +39,7 @@ public abstract class Trigger : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        // Debug.Log("testr");
         //checks if conditions are right
         if(isActive && !hasOccurred) 
         {
@@ -51,6 +54,7 @@ public abstract class Trigger : MonoBehaviour
             else
             {
                 if(Input.GetKeyDown(KeyCode.E)) {
+                    Debug.Log("action");
                     Action();
                     if(!repeatable)
                     {

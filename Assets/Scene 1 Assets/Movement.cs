@@ -142,7 +142,12 @@ public class Movement : MonoBehaviour
 				m_Rigidbody2D.AddForce(new Vector2(0f, m_JumpForce));
 				dj = true;
 			}
-			}
+		}
+		else
+		{
+			m_Velocity = Vector3.zero;
+			m_Rigidbody2D.velocity = m_Velocity;
+		}
 	}
 
 
