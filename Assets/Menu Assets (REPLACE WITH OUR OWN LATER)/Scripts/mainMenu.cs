@@ -23,7 +23,7 @@ public class mainMenu : MonoBehaviour
 
     public void StartGame()
     {
-        SceneManager.LoadScene("Scene1");
+        SceneManager.LoadScene("Real World");
     }
 
     public void OpenOptions()
