@@ -25,7 +25,7 @@ public class Ceiling_Trigger : MonoBehaviour
     }
     void OnTriggerEnter2D(Collider2D col)
     {
-        if (!entered && counter >= 69)
+        if (!entered && counter >= 6)
         {
             entered = true;
 
@@ -35,7 +35,7 @@ public class Ceiling_Trigger : MonoBehaviour
             Debug.Log(counter);
             counter = 0;
         }
-        else if (counter >= 69 && entered)
+        else if (counter >= 6 && entered)
         {
             //Debug.Log("Moved cam left");
             Debug.Log(counter);

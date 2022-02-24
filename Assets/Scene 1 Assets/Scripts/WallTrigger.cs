@@ -9,7 +9,7 @@ public class WallTrigger : MonoBehaviour
     public GameObject cat;
     private int counter = 0;
     private Vector3 moveCam = new Vector3(20,0,0);
-    private Vector3 moveCat = new Vector3(4,0,0);
+    private Vector3 moveCat = new Vector3(5,0,0);
     // Start is called before the first frame update
     void Start()
     {
@@ -28,7 +28,7 @@ public class WallTrigger : MonoBehaviour
         {
             Interact(col);
         }
-        if (!entered && counter >= 120)
+        if (!entered && counter >= 6)
         {
             entered = true;
 
@@ -39,7 +39,7 @@ public class WallTrigger : MonoBehaviour
             counter = 0;
             //PlayerMovement.ChangePos(1, 2);
         }
-        else if (counter >= 120 && entered)
+        else if (counter >= 6 && entered)
         {
             //Debug.Log("Moved cam left");
             //Debug.Log(counter);
