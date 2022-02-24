@@ -1384,6 +1384,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 4883996976931216989, guid: 6ea336e93a8128346aad568255a7e6af, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: -8109058881888065430, guid: f99a1e623eb554e4aa4314aba18b2531, type: 3}
+    - target: {fileID: 4883996976931216989, guid: 6ea336e93a8128346aad568255a7e6af, type: 3}
+      propertyPath: m_WasSpriteAssigned
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 7059772333487008123, guid: 6ea336e93a8128346aad568255a7e6af, type: 3}
       propertyPath: m_Name
       value: testbox
@@ -1436,23 +1444,28 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7479122399646608139, guid: 6ea336e93a8128346aad568255a7e6af, type: 3}
+      propertyPath: m_Camera
+      value: 
+      objectReference: {fileID: 374095577}
+    - target: {fileID: 8637085924552831791, guid: 6ea336e93a8128346aad568255a7e6af, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 72
+      objectReference: {fileID: 0}
+    - target: {fileID: 8637085924552831791, guid: 6ea336e93a8128346aad568255a7e6af, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 72
+      objectReference: {fileID: 0}
+    - target: {fileID: 8637085924552831791, guid: 6ea336e93a8128346aad568255a7e6af, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -720
+      objectReference: {fileID: 0}
+    - target: {fileID: 8637085924552831791, guid: 6ea336e93a8128346aad568255a7e6af, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -353
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6ea336e93a8128346aad568255a7e6af, type: 3}
---- !u!95 &1330887280 stripped
-Animator:
-  m_CorrespondingSourceObject: {fileID: 9032403516113401987, guid: 6ea336e93a8128346aad568255a7e6af, type: 3}
-  m_PrefabInstance: {fileID: 1330887279}
-  m_PrefabAsset: {fileID: 0}
---- !u!1 &1330887281 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 6300146333193859577, guid: 6ea336e93a8128346aad568255a7e6af, type: 3}
-  m_PrefabInstance: {fileID: 1330887279}
-  m_PrefabAsset: {fileID: 0}
---- !u!1 &1330887282 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 7059772332581294260, guid: 6ea336e93a8128346aad568255a7e6af, type: 3}
-  m_PrefabInstance: {fileID: 1330887279}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1477138877
 GameObject:
   m_ObjectHideFlags: 0
@@ -1607,6 +1620,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ff8c6d62e5fc0f6478840a18add47f3a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1 &1683218372 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7059772333487008123, guid: 6ea336e93a8128346aad568255a7e6af, type: 3}
+  m_PrefabInstance: {fileID: 1330887279}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1862206375
 GameObject:
   m_ObjectHideFlags: 0
@@ -1730,15 +1748,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   forceInteract: 0
-  repeatable: 1
+  repeatable: 0
   value: 0
-  TextBox: {fileID: 1330887282}
-  HeadBox: {fileID: 1330887281}
+  TextBox: {fileID: 1683218372}
   pages:
   - asdfsadfasfdsadfasdfsdfasdfasdf
   - ahhhhhhhhhhhhhhh
   emotes: 0100000003000000
-  controller: {fileID: 1330887280}
+  controller: {fileID: 9100000, guid: 7eb4fdbc838e84a8e83347d54fd48aa6, type: 2}
   startSprite: {fileID: -8109058881888065430, guid: f99a1e623eb554e4aa4314aba18b2531, type: 3}
   audioManager: {fileID: 1586724389}
   isTalking: 1

@@ -432,7 +432,7 @@ GameObject:
   - component: {fileID: 7479122399646608139}
   - component: {fileID: 6609646662535657406}
   - component: {fileID: 9064808559075345882}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: Head Canvas
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -630,12 +630,13 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7059772332581294260}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 4098cb6d8f351b44ca98b3bb6311f330, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   animator: {fileID: 9032403516113401987}
+  controller: {fileID: 0}
   textbox: {fileID: 7059772333148747626}
   arrow: {fileID: 7395190149993767727}
   audioManager: {fileID: 0}
@@ -643,7 +644,6 @@ MonoBehaviour:
   emotes: 
   isOpen: 0
   textTest: {fileID: 7059772332581294260}
-  headText: {fileID: 6300146333193859577}
   isTalking: 0
 --- !u!1 &7059772333148747624
 GameObject:
@@ -840,7 +840,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7059772333487008124}
-  m_Layer: 0
+  - component: {fileID: 9060944746453456260}
+  m_Layer: 5
   m_Name: Textbox
   m_TagString: Event
   m_Icon: {fileID: 0}
@@ -863,3 +864,25 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &9060944746453456260
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7059772333487008123}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4098cb6d8f351b44ca98b3bb6311f330, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  animator: {fileID: 9032403516113401987}
+  controller: {fileID: 0}
+  textbox: {fileID: 7059772333148747626}
+  arrow: {fileID: 7395190149993767727}
+  audioManager: {fileID: 0}
+  pages: []
+  emotes: 
+  isOpen: 0
+  textTest: {fileID: 7059772333487008123}
+  isTalking: 0
