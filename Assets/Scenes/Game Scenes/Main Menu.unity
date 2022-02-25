@@ -156,7 +156,7 @@ RectTransform:
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 1, y: 1}
+  m_AnchorMax: {x: 0, y: 0}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 10, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
@@ -577,8 +577,8 @@ RectTransform:
   m_Father: {fileID: 684044597}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 1, y: 0}
-  m_AnchorMax: {x: 1, y: 1}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 20, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
@@ -983,8 +983,8 @@ RectTransform:
   m_Father: {fileID: 1299549684}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 1, y: 0}
-  m_AnchorMax: {x: 1, y: 1}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 20, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
@@ -1409,7 +1409,7 @@ RectTransform:
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 1, y: 1}
+  m_AnchorMax: {x: 0, y: 0}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 10, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
@@ -1968,7 +1968,7 @@ RectTransform:
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 1, y: 1}
+  m_AnchorMax: {x: 0, y: 0}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 10, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
@@ -2384,7 +2384,7 @@ PrefabInstance:
     - target: {fileID: 2279045750008590724, guid: 158e2c5bf8709994a87286eb92997cd6, type: 3}
       propertyPath: m_fontAsset
       value: 
-      objectReference: {fileID: 11400000, guid: 8bd1780577b8eaf43ad60554189eb11e, type: 2}
+      objectReference: {fileID: 11400000, guid: 1a720ceb9285174499a73898e09bd868, type: 2}
     - target: {fileID: 2279045750008590724, guid: 158e2c5bf8709994a87286eb92997cd6, type: 3}
       propertyPath: m_fontColor.b
       value: 0.21960786
@@ -2404,7 +2404,7 @@ PrefabInstance:
     - target: {fileID: 2279045750008590724, guid: 158e2c5bf8709994a87286eb92997cd6, type: 3}
       propertyPath: m_sharedMaterial
       value: 
-      objectReference: {fileID: 1974643164809013703, guid: 8bd1780577b8eaf43ad60554189eb11e, type: 2}
+      objectReference: {fileID: 5496228439988022777, guid: 1a720ceb9285174499a73898e09bd868, type: 2}
     - target: {fileID: 2279045750008590724, guid: 158e2c5bf8709994a87286eb92997cd6, type: 3}
       propertyPath: m_fontColor32.rgba
       value: 4281873969
@@ -3844,7 +3844,7 @@ PrefabInstance:
     - target: {fileID: 2279045750008590724, guid: 158e2c5bf8709994a87286eb92997cd6, type: 3}
       propertyPath: m_sharedMaterial
       value: 
-      objectReference: {fileID: 1974643164809013703, guid: 8bd1780577b8eaf43ad60554189eb11e, type: 2}
+      objectReference: {fileID: 2752953754619600047, guid: 8bd1780577b8eaf43ad60554189eb11e, type: 2}
     - target: {fileID: 2279045750008590724, guid: 158e2c5bf8709994a87286eb92997cd6, type: 3}
       propertyPath: m_fontColor32.rgba
       value: 4281873969
@@ -3942,7 +3942,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &997522403
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4302,7 +4302,7 @@ PrefabInstance:
     - target: {fileID: 2279045750008590724, guid: 158e2c5bf8709994a87286eb92997cd6, type: 3}
       propertyPath: m_sharedMaterial
       value: 
-      objectReference: {fileID: -6507631187338287659, guid: 8bd1780577b8eaf43ad60554189eb11e, type: 2}
+      objectReference: {fileID: 0}
     - target: {fileID: 2279045750008590724, guid: 158e2c5bf8709994a87286eb92997cd6, type: 3}
       propertyPath: m_characterSpacing
       value: -1
@@ -4310,6 +4310,10 @@ PrefabInstance:
     - target: {fileID: 2279045750008590724, guid: 158e2c5bf8709994a87286eb92997cd6, type: 3}
       propertyPath: m_fontColor32.rgba
       value: 4281873969
+      objectReference: {fileID: 0}
+    - target: {fileID: 2279045750008590724, guid: 158e2c5bf8709994a87286eb92997cd6, type: 3}
+      propertyPath: m_hasFontAssetChanged
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3617937272123271708, guid: 158e2c5bf8709994a87286eb92997cd6, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
@@ -4950,7 +4954,7 @@ PrefabInstance:
     - target: {fileID: 2279045750008590724, guid: 158e2c5bf8709994a87286eb92997cd6, type: 3}
       propertyPath: m_sharedMaterial
       value: 
-      objectReference: {fileID: 1974643164809013703, guid: 8bd1780577b8eaf43ad60554189eb11e, type: 2}
+      objectReference: {fileID: 2752953754619600047, guid: 8bd1780577b8eaf43ad60554189eb11e, type: 2}
     - target: {fileID: 2279045750008590724, guid: 158e2c5bf8709994a87286eb92997cd6, type: 3}
       propertyPath: m_characterSpacing
       value: 0
@@ -5739,8 +5743,8 @@ RectTransform:
   m_Father: {fileID: 981775343}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 1, y: 0}
-  m_AnchorMax: {x: 1, y: 1}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 20, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
@@ -5991,7 +5995,7 @@ PrefabInstance:
     - target: {fileID: 2279045750008590724, guid: 158e2c5bf8709994a87286eb92997cd6, type: 3}
       propertyPath: m_sharedMaterial
       value: 
-      objectReference: {fileID: 1974643164809013703, guid: 8bd1780577b8eaf43ad60554189eb11e, type: 2}
+      objectReference: {fileID: 0}
     - target: {fileID: 2279045750008590724, guid: 158e2c5bf8709994a87286eb92997cd6, type: 3}
       propertyPath: m_characterSpacing
       value: -1
@@ -5999,6 +6003,10 @@ PrefabInstance:
     - target: {fileID: 2279045750008590724, guid: 158e2c5bf8709994a87286eb92997cd6, type: 3}
       propertyPath: m_fontColor32.rgba
       value: 4281873969
+      objectReference: {fileID: 0}
+    - target: {fileID: 2279045750008590724, guid: 158e2c5bf8709994a87286eb92997cd6, type: 3}
+      propertyPath: m_hasFontAssetChanged
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3617937272123271708, guid: 158e2c5bf8709994a87286eb92997cd6, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
