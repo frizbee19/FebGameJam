@@ -4,13 +4,18 @@ using UnityEngine;
 
 public class Platform : MonoBehaviour
 {
+    public bool isMoving;
     public Vector3 positionToMoveTo;
     public float length;
+    float prevY;
     Vector3 startPos;
     void Start()
     {
-        startPos = transform.position;
-        StartCoroutine(LerpPosition(positionToMoveTo, length));
+        if(isMoving)
+        {
+            startPos = transform.position;
+            StartCoroutine(LerpPosition(positionToMoveTo, length));
+        }
     }
     IEnumerator LerpPosition(Vector3 targetPosition, float duration)
     {
@@ -35,11 +40,27 @@ public class Platform : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(transform.position == positionToMoveTo) {
-            Switch();
-            StartCoroutine(LerpPosition(positionToMoveTo, length));
+
+        if(isMoving) {
+            if(transform.position == positionToMoveTo) {
+                Switch();
+                StartCoroutine(LerpPosition(positionToMoveTo, length));
+            }
         }
     }
 
-
+    // void OnCollisionEnter2D (Collision2D other) {
+        
+    //      if (other.gameObject.tag == "Player") {
+    //          if(goThrough) {
+    //             if(other.gameObject.GetComponent<Movement>().m_Velocity.y > 0.01f) {
+    //                 GetComponent<Collider2D>().isTrigger = true;
+    //             }
+    //             else
+    //             {
+    //                 GetComponent<Collider2D>().isTrigger = false;
+    //             }
+    //          }
+    //      }
+    //  }
 }
