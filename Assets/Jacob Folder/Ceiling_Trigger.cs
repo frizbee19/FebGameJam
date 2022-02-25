@@ -10,7 +10,7 @@ public class Ceiling_Trigger : MonoBehaviour
     public GameObject cat;
     private int counter = 0;
     private Vector3 moveCam = new Vector3(0, 10, 0);
-    private Vector3 moveCat = new Vector3(0, 3, 0);
+    private Vector3 moveCat = new Vector3(0, 5, 0);
 
     // Start is called before the first frame update
     void Start()

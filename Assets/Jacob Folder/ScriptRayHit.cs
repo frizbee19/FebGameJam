@@ -8,26 +8,62 @@ public class ScriptRayHit : MonoBehaviour
     public RaycastHit2D hit;
     public Ray ray;
     private int counter;
-    public Camera followCam;
+
+    public GameObject followCam;
     public Camera staticCam;
     private bool cam = false;
+    [Range(0.5f, 10f)] public float smoothSpeed = 1f;
+    [Range(1, 10)] public float rayLength = 4f;
+    private float angleStep = 4;
+
+    public Transform target;
+    public Rigidbody2D rb;
+    private Vector3 offset;
+    private LayerMask layerMask;
+
     // Start is called before the first frame update
     void Start()
     {
         counter = 0;
+        layerMask = LayerMask.GetMask("Background");
     }
+
+    void FixedUpdate()
+    {
+        offset = Vector3.zero;
+        for (int i = 1; i <=angleStep; i++)
+        {
+            var rayAngle = Quaternion.AngleAxis((360f / angleStep) * i, target.forward) * target.up;
+            hit = Physics2D.Raycast(target.position, rayAngle, rayLength, layerMask);
+            if (hit)
+            {
+                offset += (rayAngle * rayLength) - (rayAngle * hit.distance);
+            }
+            //Vector3 smoothedPos = new Vector3((target.position.x - offset.x)*rayLength, target.position.y - offset.y, -1.3f);
+            Vector3 smoothedPos = Vector3.Lerp(transform.position, new Vector3((target.position.x - offset.x)*rayLength, target.position.y - offset.y, -100f), smoothSpeed * Time.fixedDeltaTime);
+
+            Debug.Log(smoothedPos);
+            followCam.transform.position = smoothedPos;
+        }
+    }
+    //Vector3 smoothedPos = Vector3.Lerp(transform.position, new Vector3((target.position.x - offset.x)*rayLength, target.position.y - offset.y, -1.3f), smoothSpeed * Time.fixedDeltaTime);
 
     // Update is called once per frame
     void Update()
     {
-        hit = Physics2D.Raycast(transform.position, transform.TransformDirection(Vector2.right), 4f);
+
+
+
+        /*hit = Physics2D.Raycast(transform.position, transform.TransformDirection(Vector2.right), 4f);
         if (hit)
         {
             Debug.Log(" Hit a wall "+ hit.collider.name);
-            staticCam.enabled = true;
-            followCam.enabled = false;
+            Debug.Log(hit.distance);
+            //staticCam.enabled = true;
+            //followCam.enabled = false;
             counter = 0;
-            cam = true;
+            //cam = true;
+            
         }
         else if (cam && counter == 30)
         {
@@ -37,7 +73,7 @@ public class ScriptRayHit : MonoBehaviour
             cam = false;
             Debug.Log("");
         }
-        counter++;
+        counter++;*/
     }
 
     
