@@ -57,6 +57,18 @@ MonoBehaviour:
     volume: 1
     pitch: 1
     source: {fileID: 0}
+  - name: dreamblop
+    output: SFX
+    clip: {fileID: 8300000, guid: 71f0874ca3bacec4196bc4d3d9019060, type: 3}
+    volume: 1
+    pitch: 1
+    source: {fileID: 0}
+  - name: dreamblip
+    output: SFX
+    clip: {fileID: 8300000, guid: 6afaf2ffe4b5c9e43b75652c528778a9, type: 3}
+    volume: 1
+    pitch: 1
+    source: {fileID: 0}
   SFX: {fileID: -7289459987239430450, guid: c97f543260ac6cb409ed0760fe78c9a9, type: 2}
   Music: {fileID: -4387083310922404584, guid: c97f543260ac6cb409ed0760fe78c9a9, type: 2}
   Master: {fileID: 24300002, guid: c97f543260ac6cb409ed0760fe78c9a9, type: 2}

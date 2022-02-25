@@ -14,6 +14,7 @@ public class Dialogue : MonoBehaviour
     public List<int> emotes = new List<int>();
     int curPage = 0;
     public bool isOpen = false;
+    public bool isDream = false;
     //used to activate/deactivate test object
     //activate through outside means probably
     public GameObject textTest;
@@ -100,16 +101,34 @@ public class Dialogue : MonoBehaviour
                     ++cCount;
                     textbox.text = pages[curPage].Substring(0, cCount);
                     elapsed = 0;
-                    if(isTalking){
+                    if (isTalking)
+                    {
                         int RNGSound = Random.Range(0, 2);
-                        if (RNGSound == 0) {
-                            audioManager.Play("blip");
-                            Debug.Log("blip");
+                        if (isDream = true)
+                        {
+                            if (RNGSound == 0)
+                            {
+                                audioManager.Play("dreamblip");
+
+                            }
+                            else
+                            {
+                                audioManager.Play("dreamblop");
+
+                            }
                         }
                         else
                         {
-                            audioManager.Play("blop");
-                            Debug.Log("blop");
+                            if (RNGSound == 0)
+                            {
+                                audioManager.Play("blip");
+                                Debug.Log("blip");
+                            }
+                            else
+                            {
+                                audioManager.Play("blop");
+                                Debug.Log("blop");
+                            }
                         }
                     }
                 }
