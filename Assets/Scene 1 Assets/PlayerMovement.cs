@@ -7,13 +7,18 @@ public class PlayerMovement : MonoBehaviour {
     public Movement controller;
     public Animator animator;
     public Health health;
+    public Animator healthBarAnimator;
 
     public float runSpeed = 40f;
     float horizontalMove = 0f;
     bool jump = false;
     bool crouch = false;
 
-    void Start() {
+    void Awake() {
+        if (health == null) {
+            Debug.Log("Health not found! Please attach the Health script to the player so the player can take damage.");
+        }
+        Debug.Log(health);
         if (health != null) {
             health.OnHit.AddListener(OnHit);
             health.OnDead.AddListener(OnDead);
@@ -23,6 +28,10 @@ public class PlayerMovement : MonoBehaviour {
     // Update is called once per frame
     void Update() {
         horizontalMove = Input.GetAxisRaw("Horizontal") * runSpeed;
+
+        if (healthBarAnimator != null) {
+            healthBarAnimator.SetInteger("Health", health.currentHealth);
+        }
         
         if (Input.GetButtonDown("Jump")) {
             jump = true;
@@ -34,34 +43,34 @@ public class PlayerMovement : MonoBehaviour {
             crouch = false;
         }
         
-        if(Movement.pause) {
+        if (Movement.pause) {
             animator.SetFloat("Horizontal", 0);
-        }
-        if (animator != null && !Movement.pause) {
+        } else if (animator != null) {
             animator.SetFloat("Horizontal", Input.GetAxis("Horizontal"));
             animator.SetBool("Airborne", !controller.m_Grounded);
         }
     }
     void FixedUpdate() {
+        if (Movement.pause) return;
         controller.Move(horizontalMove * Time.fixedDeltaTime, crouch, jump);
         jump = false;
     }
 
     //if colliding with platform, move with platform
     void OnCollisionEnter2D (Collision2D other) {
-         if (other.gameObject.tag == "Platform") {
-             transform.parent = other.transform;
-         }
+        if (other.gameObject.tag == "Platform") {
+            transform.parent = other.transform;
+        }
         //  if(other.gameObject.tag == "Detection") {
         //     Debug.Log("detect");
         //      other.gameObject.GetComponent<MeanBird>().Detected(transform.position - other.gameObject.transform.position);
         //  }
-     }
-     void OnCollisionExit2D (Collision2D other) {
-         if (other.gameObject.tag == "Platform") {
-             transform.parent = null;
-         }
-     }
+    }
+    void OnCollisionExit2D (Collision2D other) {
+        if (other.gameObject.tag == "Platform") {
+            transform.parent = null;
+        }
+    }
 
 
     public void ChangePos(double x, double y) {
@@ -78,5 +87,6 @@ public class PlayerMovement : MonoBehaviour {
 
     void OnDead() {
         Debug.Log("Fuck, I'm dead!");
+        Movement.pause = true;
     }
 }
