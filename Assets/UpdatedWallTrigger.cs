@@ -29,29 +29,38 @@ public class UpdatedWallTrigger : MonoBehaviour
         {
             var rayAngle = Quaternion.AngleAxis((360f / angleStep) * i, target.forward) * Vector3.left;
             hit = Physics2D.Raycast(target.position, rayAngle, rayLength, layerMask);
-            float xe = Mathf.Abs(hit.point.x - target.position.x);
-            float ye = hit.point.y;
-            float goalx = Mathf.Abs(target.localPosition.x / box.size.x);
+            float xe = Mathf.Abs(hit.point.x - target.localPosition.x);
+            float ye = Mathf.Abs(hit.point.y - target.position.y);
+            float goalx = Mathf.Abs(target.position.x * box.size.x) ;
+            float goaly = Mathf.Abs(target.position.x * box.size.x);
             if (hit && counter >=150)
             {
-                if (xe >= goalx)
+                if (xe >= 44 && xe <50)
                 {
                     Debug.Log("Counter Right "+counter);
-                    Debug.Log(xe);
                     Debug.Log("XE " + xe);
-                    Debug.Log("Goal " + goalx);
-                    camMove.transform.position = new Vector3(camMove.transform.position.x - 22f, camMove.transform.position.y, -1.3f);
-                    catMove.transform.position = new Vector3(catMove.transform.position.x - 10f, catMove.transform.position.y+1f, 0);
+                    Debug.Log("Goaly " + goaly);
+                    Debug.Log(target.position.y * box.size.y);
+                    camMove.transform.position = new Vector3(camMove.transform.position.x + 22f, camMove.transform.position.y, -1.3f);
+                    catMove.transform.position = new Vector3(catMove.transform.position.x + 10f, catMove.transform.position.y+1f, 0);
+                    xe = 0;
+                    ye = 0;
+                    goalx = 0;
+                    goaly = 0;
                     counter = 0;
                 }
-                else if (xe < goalx)
+                else if (xe >=50)
                 {
                     Debug.Log("Counter Left " + counter);
-                    Debug.Log("XE "+xe);
-                    Debug.Log("Goal "+ goalx);
-                    camMove.transform.position = new Vector3(camMove.transform.position.x + 22f, 0,-1.3f);
-                    catMove.transform.position = new Vector3(catMove.transform.position.x + 10f, catMove.transform.position.y +1f,0);
+                    Debug.Log("XE "+ye);
+                    Debug.Log("Goaly "+ goaly);
+                    camMove.transform.position = new Vector3(camMove.transform.position.x - 22f, catMove.transform.position.y + 1.0f,-1.3f);
+                    catMove.transform.position = new Vector3(catMove.transform.position.x - 10f, catMove.transform.position.y ,0);
                     counter = 0;
+                    xe = 0;
+                    ye = 0;
+                    goalx = 0;
+                    goaly = 0;
                 }
             }
             counter++;
