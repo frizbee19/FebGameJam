@@ -53,7 +53,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8355641414256624237, guid: 7d4d652662d053a4691677865a2c8693, type: 3}
       propertyPath: m_Name
-      value: Cloud1 Background
+      value: Cloud1 Background Variant
       objectReference: {fileID: 0}
     - target: {fileID: 8355641414256624237, guid: 7d4d652662d053a4691677865a2c8693, type: 3}
       propertyPath: m_IsActive
@@ -77,7 +77,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8355641414256624239, guid: 7d4d652662d053a4691677865a2c8693, type: 3}
       propertyPath: m_Color.a
-      value: 0.5254902
+      value: 0.40392157
       objectReference: {fileID: 0}
     - target: {fileID: 8355641414256624239, guid: 7d4d652662d053a4691677865a2c8693, type: 3}
       propertyPath: m_SortingLayer
