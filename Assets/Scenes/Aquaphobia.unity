@@ -485,9 +485,17 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5439994587591701612, guid: faf72c53445dba543b9e5a89dc76b3e1, type: 3}
+      propertyPath: health
+      value: 
+      objectReference: {fileID: 1113210904}
+    - target: {fileID: 5439994587591701612, guid: faf72c53445dba543b9e5a89dc76b3e1, type: 3}
       propertyPath: runSpeed
       value: 20
       objectReference: {fileID: 0}
+    - target: {fileID: 5439994587591701612, guid: faf72c53445dba543b9e5a89dc76b3e1, type: 3}
+      propertyPath: healthBarAnimator
+      value: 
+      objectReference: {fileID: 128127589}
     - target: {fileID: 5439994587591701614, guid: faf72c53445dba543b9e5a89dc76b3e1, type: 3}
       propertyPath: m_TagString
       value: Player
@@ -512,10 +520,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   startingHealth: 3
+  damageTimeout: 1
   currentHealth: 0
   isInvincible: 0
   isDead: 0
-  healthBarAnimator: {fileID: 128127589}
   OnDead:
     m_PersistentCalls:
       m_Calls: []
