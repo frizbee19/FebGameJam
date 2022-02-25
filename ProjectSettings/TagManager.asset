@@ -7,6 +7,7 @@ TagManager:
   - AudioManager
   - Event
   - Platform
+  - Detection
   layers:
   - Default
   - TransparentFX

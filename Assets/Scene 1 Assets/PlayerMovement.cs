@@ -44,6 +44,10 @@ public class PlayerMovement : MonoBehaviour
          if (other.gameObject.tag == "Platform") {
              transform.parent = other.transform;
          }
+        //  if(other.gameObject.tag == "Detection") {
+        //     Debug.Log("detect");
+        //      other.gameObject.GetComponent<MeanBird>().Detected(transform.position - other.gameObject.transform.position);
+        //  }
      }
      void OnCollisionExit2D (Collision2D other) {
          if (other.gameObject.tag == "Platform") {
