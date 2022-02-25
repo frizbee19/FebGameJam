@@ -52,8 +52,4 @@ public class PlayerMovement : MonoBehaviour
     {
         transform.position = new Vector2();
     }
-    /*void OnTriggerEnter2D(Collider2D col)
-    {
-        Debug.Log("Trigger Detected!");
-    }*/
 }

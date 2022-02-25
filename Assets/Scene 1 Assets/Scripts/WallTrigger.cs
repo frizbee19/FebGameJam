@@ -19,7 +19,7 @@ public class WallTrigger : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-            counter++;   
+         counter++;  
     }
 
     void OnTriggerEnter2D(Collider2D col)
@@ -33,7 +33,14 @@ public class WallTrigger : MonoBehaviour
             entered = true;
 
             //Debug.Log("Move Cam Right");
+            //Vector3 test = Vector3.Lerp(cam.transform.position, new Vector3(cam.transform.position.x + 10, cam.transform.position.y + 5, -1.3f), 10f*Time.fixedDeltaTime);
+            //Vector3 smoothedPos = Vector3.Lerp(transform.position, new Vector3(((target.position.x - offset.x)*rayLength),
+            //target.position.y - offset.y, -65f), smoothSpeed * Time.fixedDeltaTime);
+            //cam.transform.position += test;
             cam.transform.position += moveCam;
+            //float x = Mathf.Abs(cam.transform.position.x - test.x);
+            //float y = Mathf.Abs(cam.transform.position.y - test.y);
+            
             cat.transform.position += moveCat;
             //Debug.Log(counter);
             counter = 0;
@@ -57,7 +64,4 @@ public class WallTrigger : MonoBehaviour
         Debug.Log("Interact Buttion Pressed!!");
     }
 
-    /*void Interact(Collider2D col, ){
-     * 
- }*/
 }

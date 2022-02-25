@@ -12,7 +12,7 @@ public class ScriptRayHit : MonoBehaviour
     public GameObject followCam;
     public Camera staticCam;
     private bool cam = false;
-    [Range(0.5f, 10f)] public float smoothSpeed = 1f;
+    [Range(0.5f, 25f)] public float smoothSpeed = 1f;
     [Range(1, 10)] public float rayLength = 4f;
     private float angleStep = 4;
 
@@ -20,12 +20,14 @@ public class ScriptRayHit : MonoBehaviour
     public Rigidbody2D rb;
     private Vector3 offset;
     private LayerMask layerMask;
+    private Vector3 save;
 
     // Start is called before the first frame update
     void Start()
     {
         counter = 0;
         layerMask = LayerMask.GetMask("Background");
+        save = Vector3.zero;
     }
 
     void FixedUpdate()
@@ -35,15 +37,34 @@ public class ScriptRayHit : MonoBehaviour
         {
             var rayAngle = Quaternion.AngleAxis((360f / angleStep) * i, target.forward) * target.up;
             hit = Physics2D.Raycast(target.position, rayAngle, rayLength, layerMask);
+            
             if (hit)
             {
                 offset += (rayAngle * rayLength) - (rayAngle * hit.distance);
+                //Debug.Log(hit.point);
             }
-            //Vector3 smoothedPos = new Vector3((target.position.x - offset.x)*rayLength, target.position.y - offset.y, -1.3f);
-            Vector3 smoothedPos = Vector3.Lerp(transform.position, new Vector3((target.position.x - offset.x)*rayLength, target.position.y - offset.y, -100f), smoothSpeed * Time.fixedDeltaTime);
+            Vector3 smoothedPos = Vector3.Lerp(transform.position, new Vector3(((target.position.x - offset.x)*rayLength), (target.position.y - offset.y)*smoothSpeed/5, -65f), smoothSpeed * Time.fixedDeltaTime);
 
-            Debug.Log(smoothedPos);
-            followCam.transform.position = smoothedPos;
+            float x = Mathf.Abs(target.position.x - smoothedPos.x);
+            float y = Mathf.Abs(target.position.y - smoothedPos.y);
+            
+            if (x < 4 && y < 3)
+            {
+                save = smoothedPos;
+                //followCam.transform.position = smoothedPos;
+            }
+            else if (x < 4)
+            {
+                //followCam.transform.position =new Vector3((save.x + target.position.x),smoothedPos.y, -1.3f);
+            }else if (y < 3)
+            {
+                //followCam.transform.position = new Vector3((save.x + target.position.x), smoothedPos.y, -1.3f);
+            }
+            else
+            {
+
+            }
+
         }
     }
     //Vector3 smoothedPos = Vector3.Lerp(transform.position, new Vector3((target.position.x - offset.x)*rayLength, target.position.y - offset.y, -1.3f), smoothSpeed * Time.fixedDeltaTime);
@@ -75,6 +96,4 @@ public class ScriptRayHit : MonoBehaviour
         }
         counter++;*/
     }
-
-    
 }
