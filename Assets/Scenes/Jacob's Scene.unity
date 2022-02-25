@@ -814,7 +814,7 @@ Transform:
   - {fileID: 485861824}
   - {fileID: 38840433}
   m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &772189787
 GameObject:
@@ -891,8 +891,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1fd41423fac95444da8286db867308b4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  followCam: {fileID: 1477085818}
+  followCam: {fileID: 913520874}
   staticCam: {fileID: 913520876}
+  smoothSpeed: 1
+  rayLength: 2
+  target: {fileID: 913520877}
+  rb: {fileID: 790075220}
 --- !u!114 &784188899
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -988,7 +992,6 @@ Transform:
   - {fileID: 772189788}
   - {fileID: 1772079924}
   - {fileID: 784188897}
-  - {fileID: 1477085816}
   m_Father: {fileID: 1330058645}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -1539,7 +1542,7 @@ Transform:
   m_Children:
   - {fileID: 790075216}
   m_Father: {fileID: 0}
-  m_RootOrder: 1
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1363037121
 GameObject:
@@ -1634,9 +1637,9 @@ GameObject:
   - component: {fileID: 1477085816}
   - component: {fileID: 1477085818}
   - component: {fileID: 1477085817}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: Char Cam
-  m_TagString: Untagged
+  m_TagString: MainCamera
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1649,11 +1652,11 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1477085815}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: -1.21113}
+  m_LocalPosition: {x: 0, y: 2.08, z: -1.21113}
   m_LocalScale: {x: 2, y: 2, z: 1}
   m_Children: []
-  m_Father: {fileID: 790075216}
-  m_RootOrder: 4
+  m_Father: {fileID: 0}
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!81 &1477085817
 AudioListener:
@@ -1670,7 +1673,7 @@ Camera:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1477085815}
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 2
   m_ClearFlags: 1
   m_BackGroundColor: {r: 0.19215687, g: 0.3019608, b: 0.4745098, a: 0}
@@ -1689,8 +1692,8 @@ Camera:
   near clip plane: 0.01
   far clip plane: 1000
   field of view: 155
-  orthographic: 0
-  orthographic size: 5
+  orthographic: 1
+  orthographic size: 6
   m_Depth: 0
   m_CullingMask:
     serializedVersion: 2
