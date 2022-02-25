@@ -11,13 +11,15 @@
 
 ---
 
-## Seiden emote animations
+## Emote animations
 
 ```
-0: Neutral idle
-1: Neutral talking
-2: Annoyed idle
-3: Annoyed talking
-4: Blushing idle
-5: Blushing talking
+0: Seiden neutral idle
+1: Seiden neutral talking
+2: Seiden annoyed idle
+3: Seiden annoyed talking
+4: Seiden blushing idle
+5: Seiden blushing talking
+6: Fuki idle
+7: Fuki talking
 ```
