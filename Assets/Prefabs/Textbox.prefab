@@ -69,7 +69,7 @@ MonoBehaviour:
   m_text: '>'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8bd1780577b8eaf43ad60554189eb11e, type: 2}
-  m_sharedMaterial: {fileID: -6507631187338287659, guid: 8bd1780577b8eaf43ad60554189eb11e, type: 2}
+  m_sharedMaterial: {fileID: 2752953754619600047, guid: 8bd1780577b8eaf43ad60554189eb11e, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -340,14 +340,14 @@ RectTransform:
   m_GameObject: {fileID: 1650953887092304983}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 72, y: 72, z: 1}
+  m_LocalScale: {x: 40, y: 40, z: 1}
   m_Children: []
   m_Father: {fileID: 6897333980894040127}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -686.4, y: -352.80002}
+  m_AnchoredPosition: {x: -290, y: -140}
   m_SizeDelta: {x: 3.125, y: 3.125}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!212 &4883996976931216989
@@ -492,7 +492,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0cd44c1031e13a943bb63640046fad76, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_UiScaleMode: 0
+  m_UiScaleMode: 1
   m_ReferencePixelsPerUnit: 100
   m_ScaleFactor: 1
   m_ReferenceResolution: {x: 800, y: 600}
@@ -714,7 +714,7 @@ MonoBehaviour:
   m_text: a quick brown fox jumps over the lazy dog
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8bd1780577b8eaf43ad60554189eb11e, type: 2}
-  m_sharedMaterial: {fileID: -6507631187338287659, guid: 8bd1780577b8eaf43ad60554189eb11e, type: 2}
+  m_sharedMaterial: {fileID: 2752953754619600047, guid: 8bd1780577b8eaf43ad60554189eb11e, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
