@@ -35,6 +35,18 @@ public class PlayerMovement : MonoBehaviour
         jump = false;
     }
 
+    //if colliding with platform, move with platform
+    void OnCollisionEnter2D (Collision2D other) {
+         if (other.gameObject.tag == "Platform") {
+             transform.parent = other.transform;
+         }
+     }
+     void OnCollisionExit2D (Collision2D other) {
+         if (other.gameObject.tag == "Platform") {
+             transform.parent = null;
+         }
+     }
+
 
     public void ChangePos(double x, double y)
     {
