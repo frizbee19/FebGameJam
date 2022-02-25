@@ -14,13 +14,13 @@ public class BeatCrowds : MonoBehaviour
     }
 
     // Update is called once per frame
-    void Update()
+    /*void Update()
     {
         if (Input.GetButtonDown("Jump"))
         {
             BeatLevel();
         }
-    }
+    }*/
 
     void BeatLevel()
     {

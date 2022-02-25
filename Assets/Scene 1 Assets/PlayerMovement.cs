@@ -24,7 +24,10 @@ public class PlayerMovement : MonoBehaviour
         } else if (Input.GetKeyUp(KeyCode.LeftShift)) {
             crouch = false;
         }
-
+        
+        if(Movement.pause) {
+            animator.SetFloat("Horizontal", 0);
+        }
         if (animator != null && !Movement.pause) {
             animator.SetFloat("Horizontal", Input.GetAxis("Horizontal"));
             animator.SetBool("Airborne", !controller.m_Grounded);
