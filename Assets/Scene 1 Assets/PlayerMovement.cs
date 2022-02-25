@@ -1,15 +1,25 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
 
 public class PlayerMovement : MonoBehaviour
 {
     public Movement controller;
     public Animator animator;
+    public Health health;
+
     public float runSpeed = 40f;
     float horizontalMove = 0f;
     bool jump = false;
     bool crouch = false;
+
+    void Start() {
+        if (health != null) {
+            health.OnHit.AddListener(OnHit);
+            health.OnDead.AddListener(OnDead);
+        }
+    }
 
     // Update is called once per frame
     void Update() {
@@ -60,4 +70,12 @@ public class PlayerMovement : MonoBehaviour
     {
         Debug.Log("Trigger Detected!");
     }*/
+
+    void OnHit() {
+        Debug.Log("Hit Detected!");
+    }
+
+    void OnDead() {
+        Debug.Log("Fuck, I'm dead!");
+    }
 }
