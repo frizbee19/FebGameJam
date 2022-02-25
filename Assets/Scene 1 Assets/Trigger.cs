@@ -25,17 +25,26 @@ public abstract class Trigger : MonoBehaviour
             Debug.Log("entered");
             isActive = true;
         }
-    }
-
-    private void OnTriggerExit2D(Collider2D other) {
-        if(other.CompareTag("Player")) {
+        else {
+            
             isActive = false;
             Debug.Log("exit");
-        }
-        if(forceInteract && repeatable) {
-            hasOccurred = false;
+        
+            if(forceInteract && repeatable) {
+                hasOccurred = false;
+            }
         }
     }
+
+    // private void OnTriggerExit2D(Collider2D other) {
+    //     if(other.CompareTag("Player")) {
+    //         isActive = false;
+    //         Debug.Log("exit");
+    //     }
+    //     if(forceInteract && repeatable) {
+    //         hasOccurred = false;
+    //     }
+    // }
     // Update is called once per frame
     void Update()
     {

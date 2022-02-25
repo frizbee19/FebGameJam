@@ -46,7 +46,9 @@ public class PlayerMovement : MonoBehaviour {
         if (Movement.pause) {
             animator.SetFloat("Horizontal", 0);
         } else if (animator != null) {
-            animator.SetFloat("Horizontal", Input.GetAxis("Horizontal"));
+            if(controller.m_Grounded) {
+                animator.SetFloat("Horizontal", Input.GetAxis("Horizontal"));
+            }
             animator.SetBool("Airborne", !controller.m_Grounded);
         }
     }
