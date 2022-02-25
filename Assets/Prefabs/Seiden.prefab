@@ -70,7 +70,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 1027733709
-  m_SortingLayer: 1
+  m_SortingLayer: 2
   m_SortingOrder: 0
   m_Sprite: {fileID: 1747070116146791987, guid: 73ae3db8a07b2424caf7884baa7964f8, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -231,7 +231,7 @@ GameObject:
   - component: {fileID: 5439994587591701612}
   m_Layer: 3
   m_Name: Char Movement
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -269,6 +269,7 @@ MonoBehaviour:
   m_CrouchSpeed: 0.4
   m_MovementSmoothing: 0.05
   m_AirControl: 1
+  swimming: 0
   m_WhatIsGround:
     serializedVersion: 2
     m_Bits: 695
@@ -360,6 +361,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   controller: {fileID: 5439994587591701584}
   animator: {fileID: 5439994586602100319}
+  health: {fileID: 0}
   runSpeed: 40
 --- !u!1 &5439994588348099269
 GameObject:

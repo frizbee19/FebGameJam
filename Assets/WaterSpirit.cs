@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class WaterSpirit : MonoBehaviour {
-    public Transform player;
+    private Transform player;
     public float swimSpeed = .25f;
     private Rigidbody2D rb;
     private Vector2 movement = Vector2.zero;
@@ -12,6 +12,10 @@ public class WaterSpirit : MonoBehaviour {
     void Start() {
         rb = this.GetComponent<Rigidbody2D>();
         sizeOffset = Random.Range(2f, 10f);
+        player = GameObject.FindWithTag("Player").transform;
+        if (player == null) {
+            Debug.Log("Player not found! Make sure Seiden's Char Movement has a tag of Player!");
+        }
     }
 
     void Update() {

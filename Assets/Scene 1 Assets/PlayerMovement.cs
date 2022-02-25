@@ -3,8 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
 
-public class PlayerMovement : MonoBehaviour
-{
+public class PlayerMovement : MonoBehaviour {
     public Movement controller;
     public Animator animator;
     public Health health;
@@ -43,27 +42,25 @@ public class PlayerMovement : MonoBehaviour
             animator.SetBool("Airborne", !controller.m_Grounded);
         }
     }
-    void FixedUpdate()
-    {
+    void FixedUpdate() {
         controller.Move(horizontalMove * Time.fixedDeltaTime, crouch, jump);
         jump = false;
     }
 
     //if colliding with platform, move with platform
     void OnCollisionEnter2D (Collision2D other) {
-         if (other.gameObject.tag == "Platform") {
-             transform.parent = other.transform;
-         }
-     }
-     void OnCollisionExit2D (Collision2D other) {
-         if (other.gameObject.tag == "Platform") {
-             transform.parent = null;
-         }
-     }
+        if (other.gameObject.tag == "Platform") {
+            transform.parent = other.transform;
+        }
+    }
+    void OnCollisionExit2D (Collision2D other) {
+        if (other.gameObject.tag == "Platform") {
+            transform.parent = null;
+        }
+    }
 
 
-    public void ChangePos(double x, double y)
-    {
+    public void ChangePos(double x, double y) {
         transform.position = new Vector2();
     }
     /*void OnTriggerEnter2D(Collider2D col)
