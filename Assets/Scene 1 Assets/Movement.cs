@@ -36,6 +36,7 @@ public class Movement : MonoBehaviour
 
 	private void Awake()
 	{
+		pause = false;
 		m_Rigidbody2D = GetComponent<Rigidbody2D>();
 
 		if (OnLandEvent == null)

@@ -25,7 +25,7 @@ public class PlayerMovement : MonoBehaviour
             crouch = false;
         }
 
-        if (animator != null) {
+        if (animator != null && !Movement.pause) {
             animator.SetFloat("Horizontal", Input.GetAxis("Horizontal"));
             animator.SetBool("Airborne", !controller.m_Grounded);
         }
