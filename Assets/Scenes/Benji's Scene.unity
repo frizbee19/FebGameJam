@@ -257,6 +257,17 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &264267745 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 5439994587591701584, guid: faf72c53445dba543b9e5a89dc76b3e1, type: 3}
+  m_PrefabInstance: {fileID: 5439994587558609906}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 90da90214d3bb324a8ed8f5b046ba4b9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &967738952
 GameObject:
   m_ObjectHideFlags: 0
@@ -531,6 +542,11 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 22.02, y: 1}
   m_EdgeRadius: 0
+--- !u!95 &2140781242 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 5439994586602100319, guid: faf72c53445dba543b9e5a89dc76b3e1, type: 3}
+  m_PrefabInstance: {fileID: 5439994587558609906}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1517753708608174288
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -548,7 +564,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1517753707384060330, guid: 87a461560d9a85d45a9200acb45c6ac6, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 1517753707384060330, guid: 87a461560d9a85d45a9200acb45c6ac6, type: 3}
       propertyPath: m_LocalPosition.y
@@ -643,9 +659,25 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5439994587591701584, guid: faf72c53445dba543b9e5a89dc76b3e1, type: 3}
+      propertyPath: OnLandEvent.m_PersistentCalls.m_Calls.Array.size
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5439994587591701584, guid: faf72c53445dba543b9e5a89dc76b3e1, type: 3}
+      propertyPath: OnLandEvent.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5439994587591701584, guid: faf72c53445dba543b9e5a89dc76b3e1, type: 3}
+      propertyPath: OnLandEvent.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 5439994587591701612, guid: faf72c53445dba543b9e5a89dc76b3e1, type: 3}
       propertyPath: animator
       value: 
-      objectReference: {fileID: 1124948658}
+      objectReference: {fileID: 2140781242}
+    - target: {fileID: 5439994587591701612, guid: faf72c53445dba543b9e5a89dc76b3e1, type: 3}
+      propertyPath: controller
+      value: 
+      objectReference: {fileID: 264267745}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: faf72c53445dba543b9e5a89dc76b3e1, type: 3}
