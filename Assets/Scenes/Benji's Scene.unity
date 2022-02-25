@@ -654,6 +654,18 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5439994587591701584, guid: faf72c53445dba543b9e5a89dc76b3e1, type: 3}
+      propertyPath: OnLandEvent.m_PersistentCalls.m_Calls.Array.size
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5439994587591701584, guid: faf72c53445dba543b9e5a89dc76b3e1, type: 3}
+      propertyPath: OnLandEvent.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5439994587591701584, guid: faf72c53445dba543b9e5a89dc76b3e1, type: 3}
+      propertyPath: OnLandEvent.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 5439994587591701612, guid: faf72c53445dba543b9e5a89dc76b3e1, type: 3}
       propertyPath: animator
       value: 
