@@ -49,15 +49,19 @@ public class PlayerMovement : MonoBehaviour {
 
     //if colliding with platform, move with platform
     void OnCollisionEnter2D (Collision2D other) {
-        if (other.gameObject.tag == "Platform") {
-            transform.parent = other.transform;
-        }
-    }
-    void OnCollisionExit2D (Collision2D other) {
-        if (other.gameObject.tag == "Platform") {
-            transform.parent = null;
-        }
-    }
+         if (other.gameObject.tag == "Platform") {
+             transform.parent = other.transform;
+         }
+        //  if(other.gameObject.tag == "Detection") {
+        //     Debug.Log("detect");
+        //      other.gameObject.GetComponent<MeanBird>().Detected(transform.position - other.gameObject.transform.position);
+        //  }
+     }
+     void OnCollisionExit2D (Collision2D other) {
+         if (other.gameObject.tag == "Platform") {
+             transform.parent = null;
+         }
+     }
 
 
     public void ChangePos(double x, double y) {
