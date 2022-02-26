@@ -18,6 +18,6 @@ public class camMoveUp : MonoBehaviour
         
     }
     void OnTriggerEnter2D(Collider2D col){
-            cam.transform.position = new Vector3(0, 10f,-1.3f);
+            cam.transform.position = new Vector3(0, offset,-1.3f);
     }
 }
