@@ -1,25 +1,31 @@
 fileFormatVersion: 2
-guid: f99a1e623eb554e4aa4314aba18b2531
+guid: 988542481b0a24544b2dcef350a5461f
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -8109058881888065430
-    second: seiden-emotes_0
+      213: 6254823859401255868
+    second: seiden-emote-spritesheet_0
   - first:
-      213: 5354992726988596434
-    second: seiden-emotes_1
+      213: -1597024810717329901
+    second: seiden-emote-spritesheet_1
   - first:
-      213: 6776477941202382221
-    second: seiden-emotes_2
+      213: 513348755380462125
+    second: seiden-emote-spritesheet_2
   - first:
-      213: -2826190552252792257
-    second: seiden-emotes_3
+      213: -4444019599912485171
+    second: seiden-emote-spritesheet_3
   - first:
-      213: 1232664573060430783
-    second: seiden-emotes_4
+      213: -1871821792033348118
+    second: seiden-emote-spritesheet_4
   - first:
-      213: 5625398474919881811
-    second: seiden-emotes_5
+      213: -2170293955171528748
+    second: seiden-emote-spritesheet_5
+  - first:
+      213: -3403767949682752304
+    second: seiden-emote-spritesheet_6
+  - first:
+      213: -7728925550398990426
+    second: seiden-emote-spritesheet_7
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -121,7 +127,49 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: seiden-emotes_0
+      name: seiden-emote-spritesheet_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 75
+        width: 25
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cbbef3029299dc650800000000000000
+      internalID: 6254823859401255868
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: seiden-emote-spritesheet_1
+      rect:
+        serializedVersion: 2
+        x: 25
+        y: 75
+        width: 25
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 31645b3656a36d9e0800000000000000
+      internalID: -1597024810717329901
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: seiden-emote-spritesheet_2
       rect:
         serializedVersion: 2
         x: 0
@@ -135,14 +183,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a68e55a19e5d67f80800000000000000
-      internalID: -8109058881888065430
+      spriteID: d22675229f7cf1700800000000000000
+      internalID: 513348755380462125
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: seiden-emotes_1
+      name: seiden-emote-spritesheet_3
       rect:
         serializedVersion: 2
         x: 25
@@ -156,14 +204,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2d4a4f26381c05a40800000000000000
-      internalID: 5354992726988596434
+      spriteID: dceb75428bba352c0800000000000000
+      internalID: -4444019599912485171
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: seiden-emotes_2
+      name: seiden-emote-spritesheet_4
       rect:
         serializedVersion: 2
         x: 0
@@ -177,14 +225,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d8d63a1c8c2ea0e50800000000000000
-      internalID: 6776477941202382221
+      spriteID: ae5640b5ff3f506e0800000000000000
+      internalID: -1871821792033348118
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: seiden-emotes_3
+      name: seiden-emote-spritesheet_5
       rect:
         serializedVersion: 2
         x: 25
@@ -198,14 +246,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f324861aaaa57c8d0800000000000000
-      internalID: -2826190552252792257
+      spriteID: 4dfc2df752191e1e0800000000000000
+      internalID: -2170293955171528748
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: seiden-emotes_4
+      name: seiden-emote-spritesheet_6
       rect:
         serializedVersion: 2
         x: 0
@@ -219,14 +267,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: fbbb974f5ed4b1110800000000000000
-      internalID: 1232664573060430783
+      spriteID: 0d4cc4d651363c0d0800000000000000
+      internalID: -3403767949682752304
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: seiden-emotes_5
+      name: seiden-emote-spritesheet_7
       rect:
         serializedVersion: 2
         x: 25
@@ -240,8 +288,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 35caf99bb1e611e40800000000000000
-      internalID: 5625398474919881811
+      spriteID: 6a7170959275db490800000000000000
+      internalID: -7728925550398990426
       vertices: []
       indices: 
       edges: []

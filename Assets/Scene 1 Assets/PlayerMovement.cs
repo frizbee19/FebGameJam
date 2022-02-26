@@ -17,9 +17,7 @@ public class PlayerMovement : MonoBehaviour {
     void Awake() {
         if (health == null) {
             Debug.Log("Health not found! Please attach the Health script to the player so the player can take damage.");
-        }
-        Debug.Log(health);
-        if (health != null) {
+        } else {
             health.OnHit.AddListener(OnHit);
             health.OnDead.AddListener(OnDead);
         }
@@ -28,10 +26,6 @@ public class PlayerMovement : MonoBehaviour {
     // Update is called once per frame
     void Update() {
         horizontalMove = Input.GetAxisRaw("Horizontal") * runSpeed;
-
-        if (healthBarAnimator != null) {
-            healthBarAnimator.SetInteger("Health", health.currentHealth);
-        }
         
         if (Input.GetButtonDown("Jump")) {
             jump = true;
@@ -48,6 +42,9 @@ public class PlayerMovement : MonoBehaviour {
         } else if (animator != null) {
             animator.SetFloat("Horizontal", Input.GetAxis("Horizontal"));
             animator.SetBool("Airborne", !controller.m_Grounded);
+            if (healthBarAnimator != null) {
+                healthBarAnimator.SetInteger("Health", health.currentHealth);
+            }
         }
     }
     void FixedUpdate() {

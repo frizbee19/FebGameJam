@@ -14,6 +14,6 @@ public class Expressions : MonoBehaviour {
     // Update is called once per frame
     void Update() {
         counter++;
-        animator.SetInteger("Animation", (counter / 100) % 8);
+        animator.SetInteger("Animation", (counter / 100) % 12);
     }
 }
