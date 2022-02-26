@@ -27,3 +27,13 @@
 10: Fuki idle laughing
 11: Fuki talking laughing
 ```
+
+## Bird animations
+
+```
+0: Bird black sit
+1: Bird black fly
+2: Bird red sit
+3: Bird red fly
+4: Bird blue fly
+```
