@@ -13,6 +13,7 @@ public class booMovement : MonoBehaviour
     public GameObject cat;
     public bool ball;
     public Movement mvt;
+    public Animator anim;
 
     void Start()
     {
@@ -21,8 +22,6 @@ public class booMovement : MonoBehaviour
         sizeOffset = Random.Range(2f, 10f);
         player = cat.transform;
         
-        
-        //player = GameObject.FindWithTag("Player").transform;
         if (player == null)
         {
             Debug.Log("Player not found! Make sure Seiden's Char Movement has a tag of Player!");
@@ -36,27 +35,18 @@ public class booMovement : MonoBehaviour
          mvt = cat.GetComponent<Movement>();
         ball = mvt.m_FacingRight;
 
-        if ((transform.position.x < player.position.x && ball)||(transform.position.x > player.position.x && !ball))
-        {
-            //Debug.Log("Away");
+        if ((transform.position.x < player.position.x && ball)||(transform.position.x > player.position.x && !ball)) {
             player = cat.transform;
             Vector3 direction = player.position - transform.position;
             movement = direction.normalized;
-            // Scale spirit size so they look like the swim like squid lol
-            float size = Mathf.Sin(Time.time * sizeOffset) * .25f + 1;
-            transform.localScale = new Vector3(size, size, 1);
         }
     }
 
-    void FixedUpdate()
-    {
+    void FixedUpdate() {
         if (Movement.pause) return;
-        if ((transform.position.x < player.position.x && ball) || (transform.position.x > player.position.x && !ball))
-        {
-            moveMe(movement); 
-        }
-        else
-        {
+        if ((transform.position.x < player.position.x && ball) || (transform.position.x > player.position.x && !ball)) {
+            moveMe(movement);
+        } else {
             noMoveMe(transform);
         }
     }
@@ -69,12 +59,12 @@ public class booMovement : MonoBehaviour
         }
     }
 
-    void moveMe(Vector2 direction)
-    {
+    void moveMe(Vector2 direction) {
+        if (anim != null) anim.SetBool("Shy?", false);
         rb.MovePosition(rb.position + direction * swimSpeed * Time.fixedDeltaTime);
     }
-    void noMoveMe(Transform transform)
-    {
+    void noMoveMe(Transform transform) {
+        if (anim != null) anim.SetBool("Shy?", true);
         rb.MovePosition(new Vector2(transform.position.x, transform.position.y));
     }
 }
