@@ -43,6 +43,7 @@ public class ScriptRayHit : MonoBehaviour
                 offset += (rayAngle * rayLength) - (rayAngle * hit.distance);
                 //Debug.Log(hit.point);
             }
+
             Vector3 smoothedPos = Vector3.Lerp(transform.position, new Vector3(((target.position.x - offset.x)*rayLength), (target.position.y - offset.y)*smoothSpeed/5, -65f), smoothSpeed * Time.fixedDeltaTime);
 
             float x = Mathf.Abs(target.position.x - smoothedPos.x);
