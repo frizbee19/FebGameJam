@@ -1,19 +1,13 @@
 fileFormatVersion: 2
-guid: bb320d191f76f4228ad733eb9b5ce880
+guid: d48fd9d9f47b5467cb424240c7f9f276
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -1197645311261903289
-    second: fuki-emote-spritesheet_0
+      213: -1886119498855039967
+    second: Fuki_neutral_spritesheet_0
   - first:
-      213: -4508786471188571043
-    second: fuki-emote-spritesheet_1
-  - first:
-      213: 2505844562292807002
-    second: fuki-emote-spritesheet_2
-  - first:
-      213: 4082602398422066911
-    second: fuki-emote-spritesheet_3
+      213: -7381896143297181974
+    second: Fuki_neutral_spritesheet_1
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -115,49 +109,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: fuki-emote-spritesheet_0
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 25
-        width: 25
-        height: 25
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 746725f4feb116fe0800000000000000
-      internalID: -1197645311261903289
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: fuki-emote-spritesheet_1
-      rect:
-        serializedVersion: 2
-        x: 25
-        y: 25
-        width: 25
-        height: 25
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: d5cd7b0d7929d61c0800000000000000
-      internalID: -4508786471188571043
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: fuki-emote-spritesheet_2
+      name: Fuki_neutral_spritesheet_0
       rect:
         serializedVersion: 2
         x: 0
@@ -171,14 +123,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a559ec55a5c86c220800000000000000
-      internalID: 2505844562292807002
+      spriteID: 12cbec21f4823d5e0800000000000000
+      internalID: -1886119498855039967
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: fuki-emote-spritesheet_3
+      name: Fuki_neutral_spritesheet_1
       rect:
         serializedVersion: 2
         x: 25
@@ -192,8 +144,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: fd6ea15304158a830800000000000000
-      internalID: 4082602398422066911
+      spriteID: ae602f1919c3e8990800000000000000
+      internalID: -7381896143297181974
       vertices: []
       indices: 
       edges: []

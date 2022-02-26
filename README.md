@@ -14,12 +14,26 @@
 ## Emote animations
 
 ```
-0: Seiden neutral idle
-1: Seiden neutral talking
-2: Seiden annoyed idle
-3: Seiden annoyed talking
-4: Seiden blushing idle
-5: Seiden blushing talking
-6: Fuki idle
-7: Fuki talking
+ 0: Seiden idle neutral
+ 1: Seiden talking neutral
+ 2: Seiden idle annoyed
+ 3: Seiden talking annoyed
+ 4: Seiden idle blushing
+ 5: Seiden talking blushing
+ 6: Seiden idle crying
+ 7: Seiden talking crying
+ 8: Fuki idle neutral
+ 9: Fuki talking neutral
+10: Fuki idle laughing
+11: Fuki talking laughing
+```
+
+## Bird animations
+
+```
+0: Bird black sit
+1: Bird black fly
+2: Bird red sit
+3: Bird red fly
+4: Bird blue fly
 ```
