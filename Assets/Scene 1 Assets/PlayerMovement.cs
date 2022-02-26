@@ -17,7 +17,9 @@ public class PlayerMovement : MonoBehaviour {
     void Awake() {
         if (health == null) {
             Debug.Log("Health not found! Please attach the Health script to the player so the player can take damage.");
-        } else {
+        }
+        Debug.Log(health);
+        if (health != null) {
             health.OnHit.AddListener(OnHit);
             health.OnDead.AddListener(OnDead);
         }
@@ -26,6 +28,10 @@ public class PlayerMovement : MonoBehaviour {
     // Update is called once per frame
     void Update() {
         horizontalMove = Input.GetAxisRaw("Horizontal") * runSpeed;
+
+        if (healthBarAnimator != null) {
+            healthBarAnimator.SetInteger("Health", health.currentHealth);
+        }
         
         if (Input.GetButtonDown("Jump")) {
             jump = true;
@@ -67,6 +73,10 @@ public class PlayerMovement : MonoBehaviour {
         if (other.gameObject.tag == "Platform") {
             transform.parent = other.transform;
         }
+        // if(other.gameObject.tag == "Enemy") {
+        //     Debug.Log("take hit");
+        //     health.takeHit();
+        // }
         //  if(other.gameObject.tag == "Detection") {
         //     Debug.Log("detect");
         //      other.gameObject.GetComponent<MeanBird>().Detected(transform.position - other.gameObject.transform.position);

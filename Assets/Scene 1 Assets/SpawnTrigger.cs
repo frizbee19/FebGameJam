@@ -9,6 +9,9 @@ public class SpawnTrigger : Trigger
     [SerializeField] Vector2 startPos;
     private GameObject clone;
     private bool spawned;
+    [SerializeField] bool respawns = false;
+    [SerializeField] float respawnTime = 3f;
+    private float elapsed = 0f;
 
  
  
@@ -21,9 +24,16 @@ public class SpawnTrigger : Trigger
         this.gameObject.SetActive(false);
  }
     public override void Action() {
-        if(!spawned) {
+        if(!spawned && !respawns) {
             Debug.Log("spawn");
             StartCoroutine(SpawnDespawn());
+        }
+        else if(respawns) {
+            if(elapsed < respawnTime) {
+                elapsed = 0;
+                
+            StartCoroutine(SpawnDespawn());
+            }
         }
     }
     // Start is called before the first frame update

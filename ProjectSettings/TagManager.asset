@@ -8,6 +8,7 @@ TagManager:
   - Event
   - Platform
   - Detection
+  - Enemy
   layers:
   - Default
   - TransparentFX

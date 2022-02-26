@@ -5,7 +5,7 @@ using UnityEngine;
 public class camMoveUp : MonoBehaviour
 {
     public GameObject cam;
-     [Range(0f, 20f)] public float offset;
+    public float offset;
     // Start is called before the first frame update
     void Start()
     {
@@ -18,6 +18,6 @@ public class camMoveUp : MonoBehaviour
         
     }
     void OnTriggerEnter2D(Collider2D col){
-            cam.transform.position = new Vector3(0, 10f,-1.3f);
+            cam.transform.position = new Vector3(0, offset,-1.3f);
     }
 }

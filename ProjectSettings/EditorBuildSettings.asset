@@ -12,14 +12,23 @@ EditorBuildSettings:
     path: Assets/Scenes/Game Scenes/Real World.unity
     guid: fc05477fc002b5c4da14510bac54d68e
   - enabled: 1
-    path: Assets/Scenes/Game Scenes/Crowds Level.unity
-    guid: fdd06664190a83b47a3fcbac3e218da0
-  - enabled: 1
     path: Assets/Scenes/Game Scenes/Heights Level.unity
     guid: b23f36c2e3b3a284baae9cff59bb54e7
   - enabled: 1
+    path: Assets/Scenes/Game Scenes/Speed Level.unity
+    guid: 715ee8640d0f8f24a810ead8664e0731
+  - enabled: 1
     path: Assets/Scenes/Game Scenes/Dark Level.unity
     guid: 3682e0ded37465040be539f2372ae27b
+  - enabled: 1
+    path: Assets/Scenes/Game Scenes/Water Level.unity
+    guid: 7bd726156a1d6f2478609a52a34074bd
+  - enabled: 1
+    path: Assets/Scenes/Game Scenes/Bird Level.unity
+    guid: 3c87a24beea9091489299b23a8d9d109
+  - enabled: 1
+    path: Assets/Scenes/Game Scenes/Crowds Level.unity
+    guid: fdd06664190a83b47a3fcbac3e218da0
   - enabled: 0
     path: Assets/Scenes/Scene1.unity
     guid: 2cda990e2423bbf4892e6590ba056729
