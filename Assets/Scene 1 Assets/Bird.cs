@@ -6,7 +6,8 @@ public class Bird : MonoBehaviour
 {
     // Start is called before the first frame update
     
-    public Movement controller;
+    // public Movement controller;
+    public int birdType;
     public Animator animator;
     public float horizontalMove = -1f;
     [SerializeField] float runSpeed = 40f;
@@ -23,6 +24,7 @@ public class Bird : MonoBehaviour
     {
         m_Rigidbody2D = GetComponent<Rigidbody2D>();
         horizontalMove *= runSpeed;
+        animator.SetInteger("Animation", birdType);
     }
 
     // Update is called once per frame

@@ -5,7 +5,7 @@ using UnityEngine;
 public class MeanBird : MonoBehaviour
 {
     // Start is called before the first frame update
-    public Movement controller;
+    // public Movement controller;
     public Animator animator;
     [SerializeField] float runSpeed = 5.0f;
     // private Rigidbody2D m_Rigidbody2D;
@@ -23,6 +23,7 @@ public class MeanBird : MonoBehaviour
     void Start()
     {
         player = GameObject.FindGameObjectWithTag("Player").transform;
+        animator.SetInteger("Animation", 2);
     }
 
     // Update is called once per frame
@@ -44,6 +45,7 @@ public class MeanBird : MonoBehaviour
             direction = player.position - transform.position;
             if(direction.magnitude < detectRange) {
                 attack = true;
+                animator.SetInteger("Animation", 3);
                 Debug.Log("attack");
 
             }
@@ -58,6 +60,11 @@ public class MeanBird : MonoBehaviour
             }
             GetComponent<Rigidbody2D>().MovePosition(transform.position + direction.normalized * runSpeed * t / 100f);
             elapsed += Time.fixedDeltaTime;
+        }
+    }
+    private void OnTriggerEnter2D(Collider2D collision) {
+        if (collision.tag == "Player") {
+            collision.GetComponent<Health>().takeHit();
         }
     }
 }

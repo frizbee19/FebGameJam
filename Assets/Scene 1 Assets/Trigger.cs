@@ -46,7 +46,7 @@ public abstract class Trigger : MonoBehaviour
         }
     }
     // Update is called once per frame
-    void Update()
+    public void Update()
     {
         // Debug.Log("testr");
         //checks if conditions are right
@@ -57,7 +57,9 @@ public abstract class Trigger : MonoBehaviour
             {
                 Action();
                 hasOccurred = true;
-                isActive = false;
+                if(!repeatable) {
+                    isActive = false;
+                }
             }
             //only executes action if input is pressed
             else

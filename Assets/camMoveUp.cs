@@ -5,7 +5,7 @@ using UnityEngine;
 public class camMoveUp : MonoBehaviour
 {
     public GameObject cam;
-     [Range(0f, 20f)] public float offset;
+    public float offset;
     // Start is called before the first frame update
     void Start()
     {

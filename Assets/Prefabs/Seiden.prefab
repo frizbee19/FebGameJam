@@ -229,6 +229,7 @@ GameObject:
   - component: {fileID: 5439994587591701586}
   - component: {fileID: 5439994587591701613}
   - component: {fileID: 5439994587591701612}
+  - component: {fileID: 4726786242617749443}
   m_Layer: 3
   m_Name: Char Movement
   m_TagString: Player
@@ -277,6 +278,7 @@ MonoBehaviour:
   m_CeilingCheck: {fileID: 5439994588348099274}
   m_CrouchDisableCollider: {fileID: 5439994587591701586}
   m_Grounded: 0
+  m_FacingRight: 1
   m_Velocity: {x: 0, y: 0, z: 0}
   OnLandEvent:
     m_PersistentCalls:
@@ -361,8 +363,32 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   controller: {fileID: 5439994587591701584}
   animator: {fileID: 5439994586602100319}
-  health: {fileID: 0}
+  health: {fileID: 4726786242617749443}
+  healthBarAnimator: {fileID: 0}
   runSpeed: 40
+--- !u!114 &4726786242617749443
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5439994587591701614}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0ea69ce370e264d42b693f40a13a25b5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  startingHealth: 3
+  damageTimeout: 1
+  currentHealth: 0
+  isInvincible: 0
+  isDead: 0
+  OnDead:
+    m_PersistentCalls:
+      m_Calls: []
+  OnHit:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!1 &5439994588348099269
 GameObject:
   m_ObjectHideFlags: 0
