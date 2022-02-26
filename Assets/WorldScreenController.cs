@@ -6,8 +6,7 @@ using UnityEngine.SceneManagement;
 public class WorldScreenController : MonoBehaviour
 {
     public int currentLevel;
-    public GameObject openingDialogue;
-    public GameObject tutorialDialogue;
+    public GameObject openingDialogue, tutorialDialogue, speedDialogue, darkDialogue, waterDialogue, birdDialogue, crowdDialogue, epilogueDialogue;
     public GameObject page1;
     public GameObject page2;
     public GameObject trophy1, trophy2, trophy3, trophy4, trophy5, trophy6;
@@ -134,14 +133,14 @@ public class WorldScreenController : MonoBehaviour
         {
             fpicture1.SetActive(true);
             picture2.SetActive(true);
-            tutorialDialogue.SetActive(true);
+            speedDialogue.SetActive(true);
         }
         if (currentLevel == 3)
         {
             fpicture1.SetActive(true);
             fpicture2.SetActive(true);
             picture3.SetActive(true);
-            tutorialDialogue.SetActive(true);
+            darkDialogue.SetActive(true);
         }
         if (currentLevel == 4)
         {
@@ -149,7 +148,7 @@ public class WorldScreenController : MonoBehaviour
             fpicture2.SetActive(true);
             fpicture3.SetActive(true);
             picture4.SetActive(true);
-            tutorialDialogue.SetActive(true);
+            waterDialogue.SetActive(true);
         }
         if (currentLevel == 5)
         {
@@ -158,7 +157,7 @@ public class WorldScreenController : MonoBehaviour
             fpicture3.SetActive(true);
             fpicture4.SetActive(true);
             picture5.SetActive(true);
-            tutorialDialogue.SetActive(true);
+            birdDialogue.SetActive(true);
         }
         if (currentLevel == 6)
         {
@@ -168,7 +167,7 @@ public class WorldScreenController : MonoBehaviour
             fpicture4.SetActive(true);
             fpicture5.SetActive(true);
             picture6.SetActive(true);
-            tutorialDialogue.SetActive(true);
+            crowdDialogue.SetActive(true);
         }
         if (currentLevel == 7)
         {
@@ -178,7 +177,7 @@ public class WorldScreenController : MonoBehaviour
             fpicture4.SetActive(true);
             fpicture5.SetActive(true);
             fpicture6.SetActive(true);
-            tutorialDialogue.SetActive(true);
+            epilogueDialogue.SetActive(true);
         }
         page1.SetActive(true);       
     }

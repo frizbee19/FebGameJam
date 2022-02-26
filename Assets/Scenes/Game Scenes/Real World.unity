@@ -1682,6 +1682,84 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 158e2c5bf8709994a87286eb92997cd6, type: 3}
+--- !u!1 &411420093
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 411420094}
+  - component: {fileID: 411420096}
+  - component: {fileID: 411420095}
+  m_Layer: 8
+  m_Name: 'Water Dialogue '
+  m_TagString: Event
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!4 &411420094
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 411420093}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -7.09, y: -4.26, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1821902556}
+  m_RootOrder: 5
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!58 &411420095
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 411420093}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 3.43, y: 2.78}
+  serializedVersion: 2
+  m_Radius: 2.6
+--- !u!114 &411420096
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 411420093}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 58ad46602c4301d47a7b6f71726a1cd9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  forceInteract: 1
+  repeatable: 0
+  value: 0
+  TextBox: {fileID: 32826888}
+  pages:
+  - Fuki convinced me to try rollercoasters after we went to the top of the Space
+    Needle,
+  - but if I'm being honest it feels too soon...
+  - I mean, I can't bring myself to drive over 40 in a car...
+  - How could I ever manage a rollercoaster?!
+  - ...
+  - They already bought the tickets...
+  - Guess theres no bailing outta this one.
+  emotes: 01000000010000000300000003000000010000000700000003000000
+  controller: {fileID: 9100000, guid: 7eb4fdbc838e84a8e83347d54fd48aa6, type: 2}
+  startSprite: {fileID: 0}
+  audioManager: {fileID: 71255292}
+  isTalking: 1
 --- !u!1 &426980023
 GameObject:
   m_ObjectHideFlags: 0
@@ -2681,6 +2759,84 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 816242365082533824, guid: 158e2c5bf8709994a87286eb92997cd6, type: 3}
   m_PrefabInstance: {fileID: 861949991}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &742685362
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 742685363}
+  - component: {fileID: 742685365}
+  - component: {fileID: 742685364}
+  m_Layer: 8
+  m_Name: Crowd Dialogue
+  m_TagString: Event
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!4 &742685363
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 742685362}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -7.09, y: -4.26, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1821902556}
+  m_RootOrder: 7
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!58 &742685364
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 742685362}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 3.43, y: 2.78}
+  serializedVersion: 2
+  m_Radius: 2.6
+--- !u!114 &742685365
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 742685362}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 58ad46602c4301d47a7b6f71726a1cd9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  forceInteract: 1
+  repeatable: 0
+  value: 0
+  TextBox: {fileID: 32826888}
+  pages:
+  - Fuki convinced me to try rollercoasters after we went to the top of the Space
+    Needle,
+  - but if I'm being honest it feels too soon...
+  - I mean, I can't bring myself to drive over 40 in a car...
+  - How could I ever manage a rollercoaster?!
+  - ...
+  - They already bought the tickets...
+  - Guess theres no bailing outta this one.
+  emotes: 01000000010000000300000003000000010000000700000003000000
+  controller: {fileID: 9100000, guid: 7eb4fdbc838e84a8e83347d54fd48aa6, type: 2}
+  startSprite: {fileID: 0}
+  audioManager: {fileID: 71255292}
+  isTalking: 1
 --- !u!1 &849428263
 GameObject:
   m_ObjectHideFlags: 0
@@ -2996,6 +3152,84 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 158e2c5bf8709994a87286eb92997cd6, type: 3}
+--- !u!1 &863484169
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 863484170}
+  - component: {fileID: 863484172}
+  - component: {fileID: 863484171}
+  m_Layer: 8
+  m_Name: Bird Dialogue
+  m_TagString: Event
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!4 &863484170
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 863484169}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -7.09, y: -4.26, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1821902556}
+  m_RootOrder: 6
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!58 &863484171
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 863484169}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 3.43, y: 2.78}
+  serializedVersion: 2
+  m_Radius: 2.6
+--- !u!114 &863484172
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 863484169}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 58ad46602c4301d47a7b6f71726a1cd9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  forceInteract: 1
+  repeatable: 0
+  value: 0
+  TextBox: {fileID: 32826888}
+  pages:
+  - Fuki convinced me to try rollercoasters after we went to the top of the Space
+    Needle,
+  - but if I'm being honest it feels too soon...
+  - I mean, I can't bring myself to drive over 40 in a car...
+  - How could I ever manage a rollercoaster?!
+  - ...
+  - They already bought the tickets...
+  - Guess theres no bailing outta this one.
+  emotes: 01000000010000000300000003000000010000000700000003000000
+  controller: {fileID: 9100000, guid: 7eb4fdbc838e84a8e83347d54fd48aa6, type: 2}
+  startSprite: {fileID: 0}
+  audioManager: {fileID: 71255292}
+  isTalking: 1
 --- !u!1 &912771366
 GameObject:
   m_ObjectHideFlags: 0
@@ -3888,6 +4122,84 @@ Transform:
   m_Father: {fileID: 1010077779}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1162233801
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1162233802}
+  - component: {fileID: 1162233804}
+  - component: {fileID: 1162233803}
+  m_Layer: 8
+  m_Name: Dark Dialogue
+  m_TagString: Event
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!4 &1162233802
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1162233801}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -7.09, y: -4.26, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1821902556}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!58 &1162233803
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1162233801}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 3.43, y: 2.78}
+  serializedVersion: 2
+  m_Radius: 2.6
+--- !u!114 &1162233804
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1162233801}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 58ad46602c4301d47a7b6f71726a1cd9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  forceInteract: 1
+  repeatable: 0
+  value: 0
+  TextBox: {fileID: 32826888}
+  pages:
+  - Fuki convinced me to try rollercoasters after we went to the top of the Space
+    Needle,
+  - but if I'm being honest it feels too soon...
+  - I mean, I can't bring myself to drive over 40 in a car...
+  - How could I ever manage a rollercoaster?!
+  - ...
+  - They already bought the tickets...
+  - Guess theres no bailing outta this one.
+  emotes: 01000000010000000300000003000000010000000700000003000000
+  controller: {fileID: 9100000, guid: 7eb4fdbc838e84a8e83347d54fd48aa6, type: 2}
+  startSprite: {fileID: 0}
+  audioManager: {fileID: 71255292}
+  isTalking: 1
 --- !u!1001 &1256583920
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4373,6 +4685,12 @@ MonoBehaviour:
   currentLevel: 1
   openingDialogue: {fileID: 179626588}
   tutorialDialogue: {fileID: 1900256253}
+  speedDialogue: {fileID: 1943590100}
+  darkDialogue: {fileID: 1162233801}
+  waterDialogue: {fileID: 411420093}
+  birdDialogue: {fileID: 863484169}
+  crowdDialogue: {fileID: 742685362}
+  epilogueDialogue: {fileID: 1571714498}
   page1: {fileID: 1867849127}
   page2: {fileID: 1129362676}
   trophy1: {fileID: 1129729315}
@@ -4604,6 +4922,84 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 158e2c5bf8709994a87286eb92997cd6, type: 3}
+--- !u!1 &1571714498
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1571714499}
+  - component: {fileID: 1571714501}
+  - component: {fileID: 1571714500}
+  m_Layer: 8
+  m_Name: Epilogue Dialogue
+  m_TagString: Event
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!4 &1571714499
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1571714498}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -7.09, y: -4.26, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1821902556}
+  m_RootOrder: 8
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!58 &1571714500
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1571714498}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 3.43, y: 2.78}
+  serializedVersion: 2
+  m_Radius: 2.6
+--- !u!114 &1571714501
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1571714498}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 58ad46602c4301d47a7b6f71726a1cd9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  forceInteract: 1
+  repeatable: 0
+  value: 0
+  TextBox: {fileID: 32826888}
+  pages:
+  - Fuki convinced me to try rollercoasters after we went to the top of the Space
+    Needle,
+  - but if I'm being honest it feels too soon...
+  - I mean, I can't bring myself to drive over 40 in a car...
+  - How could I ever manage a rollercoaster?!
+  - ...
+  - They already bought the tickets...
+  - Guess theres no bailing outta this one.
+  emotes: 01000000010000000300000003000000010000000700000003000000
+  controller: {fileID: 9100000, guid: 7eb4fdbc838e84a8e83347d54fd48aa6, type: 2}
+  startSprite: {fileID: 0}
+  audioManager: {fileID: 71255292}
+  isTalking: 1
 --- !u!1 &1580276583
 GameObject:
   m_ObjectHideFlags: 0
@@ -5343,6 +5739,12 @@ Transform:
   - {fileID: 32826890}
   - {fileID: 179626592}
   - {fileID: 1900256254}
+  - {fileID: 1943590101}
+  - {fileID: 1162233802}
+  - {fileID: 411420094}
+  - {fileID: 863484170}
+  - {fileID: 742685363}
+  - {fileID: 1571714499}
   m_Father: {fileID: 0}
   m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -5437,7 +5839,15 @@ MonoBehaviour:
   - Drawing feels like my only escape sometimes,
   - The real world justs gets too overwhelming.
   - I like to sketch here to cope with everything.
-  emotes: 010000000100000001000000
+  - Sometimes it's just nice to spend some time in this imaginary world instead.
+  - ...
+  - Unfortunately I can't just draw all day.
+  - Wait why can't I do that?
+  - SHOOT!
+  - I forgot I was supposed to go with Fuki to the Space Needle today!!!
+  - They said it's not as scary as I think it is...
+  - Idk 605 feet sounds pretty damn scary to me.
+  emotes: 0100000001000000010000000500000005000000070000000100000003000000050000000300000003000000
   controller: {fileID: 9100000, guid: 7eb4fdbc838e84a8e83347d54fd48aa6, type: 2}
   startSprite: {fileID: 0}
   audioManager: {fileID: 71255292}
@@ -5545,6 +5955,84 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &1943590100
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1943590101}
+  - component: {fileID: 1943590103}
+  - component: {fileID: 1943590102}
+  m_Layer: 8
+  m_Name: Speed Dialogue
+  m_TagString: Event
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!4 &1943590101
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1943590100}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -7.09, y: -4.26, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1821902556}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!58 &1943590102
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1943590100}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 3.43, y: 2.78}
+  serializedVersion: 2
+  m_Radius: 2.6
+--- !u!114 &1943590103
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1943590100}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 58ad46602c4301d47a7b6f71726a1cd9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  forceInteract: 1
+  repeatable: 0
+  value: 0
+  TextBox: {fileID: 32826888}
+  pages:
+  - Fuki convinced me to try rollercoasters after we went to the top of the Space
+    Needle,
+  - but if I'm being honest it feels too soon...
+  - I mean, I can't bring myself to drive over 40 in a car...
+  - How could I ever manage a rollercoaster?!
+  - ...
+  - They already bought the tickets...
+  - Guess theres no bailing outta this one.
+  emotes: 01000000010000000300000003000000010000000700000003000000
+  controller: {fileID: 9100000, guid: 7eb4fdbc838e84a8e83347d54fd48aa6, type: 2}
+  startSprite: {fileID: 0}
+  audioManager: {fileID: 71255292}
+  isTalking: 1
 --- !u!1 &1970527335 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 8900608489955080584, guid: 158e2c5bf8709994a87286eb92997cd6, type: 3}
