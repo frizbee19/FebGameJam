@@ -20,11 +20,20 @@ public abstract class Trigger : MonoBehaviour
     }
 
     //checks if player is in range of the trigger
-    private void OnTriggerEnter2D(Collider2D other) {
+    private void OnTriggerStay2D(Collider2D other) {
         if(other.CompareTag("Player")) {
             Debug.Log("entered");
             isActive = true;
         }
+        // else {
+            
+        //     isActive = false;
+        //     Debug.Log("exit");
+        
+        //     if(forceInteract && repeatable) {
+        //         hasOccurred = false;
+        //     }
+        // }
     }
 
     private void OnTriggerExit2D(Collider2D other) {

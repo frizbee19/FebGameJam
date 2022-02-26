@@ -666,6 +666,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   controller: {fileID: 1536876605}
   animator: {fileID: 1969245557}
+  health: {fileID: 0}
+  healthBarAnimator: {fileID: 0}
   runSpeed: 40
 --- !u!58 &1536876602
 CircleCollider2D:
@@ -746,6 +748,7 @@ MonoBehaviour:
   m_CrouchSpeed: 0.4
   m_MovementSmoothing: 0.05
   m_AirControl: 1
+  swimming: 0
   m_WhatIsGround:
     serializedVersion: 2
     m_Bits: 695
@@ -916,8 +919,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 1027733709
-  m_SortingLayer: 2
+  m_SortingLayerID: 1196539433
+  m_SortingLayer: 1
   m_SortingOrder: 0
   m_Sprite: {fileID: 1747070116146791987, guid: 73ae3db8a07b2424caf7884baa7964f8, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
