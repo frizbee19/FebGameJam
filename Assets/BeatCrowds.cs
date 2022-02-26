@@ -25,9 +25,9 @@ public class BeatCrowds : MonoBehaviour
     void BeatLevel()
     {
         
-        if (currentLevel == 2)
+        if (currentLevel == 3)
         {
-            PlayerPrefs.SetInt("CurrentLevel", 3);
+            PlayerPrefs.SetInt("CurrentLevel", 4);
             SceneManager.LoadScene("Real World");
         }else
         {
