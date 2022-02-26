@@ -3,8 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-
-public class BeatCrowds : MonoBehaviour
+public class BeatHeights : MonoBehaviour
 {
     public int currentLevel;
     // Start is called before the first frame update
@@ -24,12 +23,13 @@ public class BeatCrowds : MonoBehaviour
 
     void BeatLevel()
     {
-        
-        if (currentLevel == 2)
+
+        if (currentLevel == 1)
         {
-            PlayerPrefs.SetInt("CurrentLevel", 3);
+            PlayerPrefs.SetInt("CurrentLevel", 2);
             SceneManager.LoadScene("Real World");
-        }else
+        }
+        else
         {
             SceneManager.LoadScene("Real World");
         }

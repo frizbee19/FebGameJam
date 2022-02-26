@@ -557,11 +557,11 @@ PrefabInstance:
       objectReference: {fileID: 1477723291}
     - target: {fileID: 3617937272123271708, guid: 158e2c5bf8709994a87286eb92997cd6, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: CancelInvoke
+      value: Level1
       objectReference: {fileID: 0}
     - target: {fileID: 3617937272123271708, guid: 158e2c5bf8709994a87286eb92997cd6, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
-      value: UnityEngine.MonoBehaviour, UnityEngine
+      value: WorldScreenController, Assembly-CSharp
       objectReference: {fileID: 0}
     - target: {fileID: 4116959943985034055, guid: 158e2c5bf8709994a87286eb92997cd6, type: 3}
       propertyPath: m_LocalRotation.w
@@ -593,7 +593,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8900608489955080584, guid: 158e2c5bf8709994a87286eb92997cd6, type: 3}
       propertyPath: m_Name
-      value: Crowds
+      value: Heights
       objectReference: {fileID: 0}
     - target: {fileID: 8900608489955080584, guid: 158e2c5bf8709994a87286eb92997cd6, type: 3}
       propertyPath: m_IsActive
@@ -1113,7 +1113,7 @@ PrefabInstance:
       objectReference: {fileID: 1477723291}
     - target: {fileID: 3617937272123271708, guid: 158e2c5bf8709994a87286eb92997cd6, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: 
+      value: Level2
       objectReference: {fileID: 0}
     - target: {fileID: 3617937272123271708, guid: 158e2c5bf8709994a87286eb92997cd6, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
@@ -1149,7 +1149,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8900608489955080584, guid: 158e2c5bf8709994a87286eb92997cd6, type: 3}
       propertyPath: m_Name
-      value: Speeds
+      value: Crowds
       objectReference: {fileID: 0}
     - target: {fileID: 8900608489955080584, guid: 158e2c5bf8709994a87286eb92997cd6, type: 3}
       propertyPath: m_IsActive

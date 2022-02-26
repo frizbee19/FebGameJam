@@ -40,6 +40,7 @@ public class Bird : MonoBehaviour
             Vector3 targetVelocity = new Vector2(horizontalMove, Mathf.Sin(elapsed * frequency) * deltaY);
                     // And then smoothing it out and applying it to the character
             m_Rigidbody2D.velocity = Vector3.SmoothDamp(m_Rigidbody2D.velocity, targetVelocity, ref m_Velocity, m_MovementSmoothing);
+            
         }
         else {
             m_Rigidbody2D.velocity = Vector3.zero;
