@@ -393,11 +393,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   forceInteract: 1
-  repeatable: 0
+  repeatable: 1
   value: 0
   despawnTimer: 5
   entity: {fileID: 1489501924}
   startPos: {x: 0, y: 0}
+  respawns: 1
+  respawnTime: 1
 --- !u!61 &814501016
 BoxCollider2D:
   m_ObjectHideFlags: 0
