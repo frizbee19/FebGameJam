@@ -15,9 +15,12 @@ EditorBuildSettings:
     path: Assets/Scenes/Game Scenes/Crowds Level.unity
     guid: fdd06664190a83b47a3fcbac3e218da0
   - enabled: 1
+    path: Assets/Scenes/Game Scenes/Heights Level.unity
+    guid: b23f36c2e3b3a284baae9cff59bb54e7
+  - enabled: 0
     path: Assets/Scenes/Scene1.unity
     guid: 2cda990e2423bbf4892e6590ba056729
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/testScene.unity
     guid: fc7cc980862393c49b562753aef7928b
   m_configObjects: {}
