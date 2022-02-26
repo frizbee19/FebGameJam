@@ -38,7 +38,7 @@ public class booMovement : MonoBehaviour
 
         if ((transform.position.x < player.position.x && ball)||(transform.position.x > player.position.x && !ball))
         {
-            Debug.Log("Away");
+            //Debug.Log("Away");
             player = cat.transform;
             Vector3 direction = player.position - transform.position;
             movement = direction.normalized;

@@ -4,18 +4,21 @@ using UnityEngine;
 
 public class Ceiling_Trigger : MonoBehaviour
 {
-
-    bool entered = false;
     public GameObject cam;
     public GameObject cat;
+    public BoxCollider2D box;
     private int counter = 0;
-    private Vector3 moveCam = new Vector3(0, 10, 0);
-    private Vector3 moveCat = new Vector3(0, 5, 0);
+    [Range (1f,25f)]public float camOffset = 10f;
+    [Range (1f,15f)] public float catOffset = 5f;
+    [Range(5, 180)] public int countOffset = 10;
+    private Vector3 moveCam;
+    private Vector3 moveCat;
 
     // Start is called before the first frame update
     void Start()
     {
-        
+        moveCam = new Vector3(0, camOffset, 0);
+        moveCat = new Vector3(0, catOffset, 0);
     }
 
     // Update is called once per frame
@@ -25,23 +28,19 @@ public class Ceiling_Trigger : MonoBehaviour
     }
     void OnTriggerEnter2D(Collider2D col)
     {
-        if (!entered && counter >= 6)
+        float ye = cat.transform.position.y;
+        float goaly = box.transform.localPosition.y;
+        if (ye < goaly && counter >= countOffset)
         {
-            entered = true;
-
-            //Debug.Log("Move Cam Right");
             cam.transform.position += moveCam;
             cat.transform.position += moveCat;
-            Debug.Log(counter);
             counter = 0;
         }
-        else if (counter >= 6 && entered)
+        else if (ye >= goaly && counter > countOffset)
         {
-            //Debug.Log("Moved cam left");
-            Debug.Log(counter);
             cam.transform.position -= moveCam;
-            //cat.transform.position -= moveCat;
-            entered = false;
+            cat.transform.position -= moveCat;
+            
             counter = 0;
         }
     }
