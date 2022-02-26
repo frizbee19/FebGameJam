@@ -10,7 +10,7 @@ public class Movement : MonoBehaviour
 	[Range(0, .3f)][SerializeField] private float m_MovementSmoothing = .05f;   // How much to smooth out the movement
 	[SerializeField] private bool m_AirControl = false;                         // Whether or not a player can steer while jumping;
 	/** @MindfulMinun -- This is for the water level, if the player is swimming just let them double jump as many times as they want. */
-	[SerializeField] private bool swimming = false;                             // Whether or not a player the player is in a swimming level
+	[SerializeField] public bool swimming = false;                              // Whether or not a player the player is in a swimming level
 	[SerializeField] private LayerMask m_WhatIsGround;                          // A mask determining what is ground to the character
 	[SerializeField] private Transform m_GroundCheck;                           // A position marking where to check if the player is grounded.
 	[SerializeField] private Transform m_CeilingCheck;                          // A position marking where to check for ceilings

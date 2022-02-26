@@ -13,7 +13,7 @@ public class WaterSpirit : MonoBehaviour {
     void Start() {
         rb = this.GetComponent<Rigidbody2D>();
         boxCollider = this.GetComponent<BoxCollider2D>();
-        sizeOffset = Random.Range(2f, 10f);
+        sizeOffset = Random.Range(2f, 3f);
         player = GameObject.FindWithTag("Player").transform;
         if (player == null) {
             Debug.Log("Player not found! Make sure Seiden's Char Movement has a tag of Player!");

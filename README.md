@@ -37,3 +37,7 @@
 3: Bird red fly
 4: Bird blue fly
 ```
+
+## CatGhost
+
+`animator.SetBool("Shy?", true/false);`
