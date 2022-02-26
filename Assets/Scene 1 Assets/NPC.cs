@@ -24,6 +24,8 @@ public class NPC : MonoBehaviour
     {
         delay = Random.Range(minDelay, maxDelay);
         horizontalMove = horizontalMove * runSpeed;
+        leftBound += controller.transform.localPosition.x;
+        rightBound -= controller.transform.localPosition.x;
     }
 
     // Update is called once per frame
@@ -42,10 +44,10 @@ public class NPC : MonoBehaviour
             animator.SetBool("Airborne", !controller.m_Grounded);
         }
         elapsed += Time.deltaTime;
-        if(transform.position.x > rightBound) {
+        if(transform.localPosition.x > rightBound) {
             horizontalMove = -1 * runSpeed;
-        }
-        if(transform.position.x < leftBound) {
+        } else 
+        if(transform.localPosition.x < leftBound) {
             horizontalMove = runSpeed;
         }
     }
