@@ -2263,7 +2263,7 @@ PrefabInstance:
       objectReference: {fileID: 1477723291}
     - target: {fileID: 3617937272123271708, guid: 158e2c5bf8709994a87286eb92997cd6, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: 
+      value: Level3
       objectReference: {fileID: 0}
     - target: {fileID: 3617937272123271708, guid: 158e2c5bf8709994a87286eb92997cd6, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
@@ -4212,6 +4212,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   cam: {fileID: 443521626}
   cat: {fileID: 1059758829}
+  box: {fileID: 0}
+  camOffset: 10
+  catOffset: 5
+  countOffset: 10
 --- !u!61 &2982002898913631351
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -4481,6 +4485,7 @@ MonoBehaviour:
   m_CeilingCheck: {fileID: 4133722626273276155}
   m_CrouchDisableCollider: {fileID: 4133722625369930933}
   m_Grounded: 0
+  m_FacingRight: 1
   m_Velocity: {x: 0, y: 0, z: 0}
   OnLandEvent:
     m_PersistentCalls:

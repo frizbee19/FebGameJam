@@ -46,7 +46,7 @@ public class WorldScreenController : MonoBehaviour
     {
         if (currentLevel >= 3)
         {
-            SceneManager.LoadScene("Crowds Level");
+            SceneManager.LoadScene("Dark Level");
         }
     }
 

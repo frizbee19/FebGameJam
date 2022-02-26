@@ -2,14 +2,14 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class UpdatedWallTrigger : MonoBehaviour
+public class UpdatedCeilingTrigger : MonoBehaviour
 {
     public RaycastHit2D hit;
     public Ray ray;
     private LayerMask layerMask;
     private float angleStep = 8;
     public Transform target;
-    [Range (1f,10f)]public float rayLength = 10f;
+    [Range(1f, 10f)] public float rayLength = 10f;
     public BoxCollider2D box;
     public GameObject camMove;
     public GameObject catMove;
@@ -19,7 +19,7 @@ public class UpdatedWallTrigger : MonoBehaviour
     void Start()
     {
         layerMask = LayerMask.GetMask("Player");
-        
+
     }
 
     // Update is called once per frame
@@ -30,32 +30,33 @@ public class UpdatedWallTrigger : MonoBehaviour
             var rayAngle = Quaternion.AngleAxis((360f / angleStep) * i, target.forward) * Vector3.left;
             hit = Physics2D.Raycast(target.position, rayAngle, rayLength, layerMask);
             float xe = Mathf.Abs(hit.point.x - target.localPosition.x);
-            float ye = Mathf.Abs(hit.point.y - target.position.y);
-            float goalx = Mathf.Abs(target.position.x * box.size.x) ;
-            float goaly = Mathf.Abs(target.position.x * box.size.x);
-            if (hit && counter >=150)
+            float ye = Mathf.Abs(hit.point.y - target.localPosition.y);
+            float goalx = Mathf.Abs(target.position.x * box.size.x);
+            float goaly = Mathf.Abs(target.position.y * box.size.y);
+            if (hit && counter >= 150)
             {
-                if (xe >= 44 && xe <50)
+                if (ye >=1)
                 {
-                    /*Debug.Log("Counter Right "+counter);
-                    Debug.Log("XE " + xe);
+                    Debug.Log("Counter Up " + counter);
+                    Debug.Log("YE " + ye);
                     Debug.Log("Goaly " + goaly);
-                    Debug.Log(target.position.y * box.size.y);*/
+                    Debug.Log(target.position.y * box.size.y);
                     camMove.transform.position = new Vector3(camMove.transform.position.x + 22f, camMove.transform.position.y, -1.3f);
-                    catMove.transform.position = new Vector3(catMove.transform.position.x + 10f, catMove.transform.position.y+1f, 0);
+                    catMove.transform.position = new Vector3(catMove.transform.position.x + 10f, catMove.transform.position.y + 1f, 0);
                     xe = 0;
                     ye = 0;
                     goalx = 0;
                     goaly = 0;
                     counter = 0;
                 }
-                else if (xe >=50)
+                else 
+
                 {
-                    /*Debug.Log("Counter Left " + counter);
-                    Debug.Log("XE "+ye);
-                    Debug.Log("Goaly "+ goaly);*/
-                    camMove.transform.position = new Vector3(camMove.transform.position.x - 22f, catMove.transform.position.y + 1.0f,-1.3f);
-                    catMove.transform.position = new Vector3(catMove.transform.position.x - 10f, catMove.transform.position.y ,0);
+                    Debug.Log("Counter Down " + counter);
+                    Debug.Log("YE " + ye);
+                    Debug.Log("Goaly " + goaly);
+                    camMove.transform.position = new Vector3(camMove.transform.position.x - 22f, catMove.transform.position.y + 1.0f, -1.3f);
+                    catMove.transform.position = new Vector3(catMove.transform.position.x - 10f, catMove.transform.position.y, 0);
                     counter = 0;
                     xe = 0;
                     ye = 0;
@@ -64,11 +65,6 @@ public class UpdatedWallTrigger : MonoBehaviour
                 }
             }
             counter++;
-        }
-
-        void OnTriggerEnter2D(Collider2D col)
-        {
-
         }
     }
 }
