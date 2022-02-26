@@ -104,7 +104,7 @@ public class Dialogue : MonoBehaviour
                     if (isTalking)
                     {
                         int RNGSound = Random.Range(0, 2);
-                        if (isDream = true)
+                        if (isDream == true)
                         {
                             if (RNGSound == 0)
                             {

@@ -6,18 +6,49 @@ using UnityEngine.SceneManagement;
 public class WorldScreenController : MonoBehaviour
 {
     public int currentLevel;
-    public GameObject Fuki;
+    public GameObject openingDialogue;
+    public GameObject tutorialDialogue;
     public GameObject page1;
     public GameObject page2;
+    public GameObject trophy1, trophy2, trophy3, trophy4, trophy5, trophy6;
+    public GameObject picture1, picture2, picture3, picture4, picture5, picture6;
+    public GameObject fpicture1, fpicture2, fpicture3, fpicture4, fpicture5, fpicture6;
+
 
     // Start is called before the first frame update
     void Start()
     {
         currentLevel = PlayerPrefs.GetInt("CurrentLevel");
+        if (currentLevel == 1)
+        {
+            openingDialogue.SetActive(true);
+        }
         if (currentLevel >= 2)
         {
-            Fuki.SetActive(true);
+            trophy1.SetActive(true);
         }
+        if (currentLevel >= 3)
+        {
+            trophy2.SetActive(true);
+        }
+        if (currentLevel >= 4)
+        {
+            trophy3.SetActive(true);
+        }
+        if (currentLevel >= 5)
+        {
+            trophy4.SetActive(true);
+        }
+        if (currentLevel >= 6)
+        {
+            trophy5.SetActive(true);
+        }
+        if (currentLevel >= 7)
+        {
+            trophy6.SetActive(true);
+        }
+
+
     }
 
     // Update is called once per frame
@@ -38,7 +69,7 @@ public class WorldScreenController : MonoBehaviour
     {
         if (currentLevel >= 2)
         {
-            SceneManager.LoadScene("Crowds Level");
+            SceneManager.LoadScene("Speed Level");
         }
     }
 
@@ -54,7 +85,7 @@ public class WorldScreenController : MonoBehaviour
     {
         if (currentLevel >= 4)
         {
-            SceneManager.LoadScene("Crowds Level");
+            SceneManager.LoadScene("Water Level");
         }
     }
 
@@ -62,7 +93,7 @@ public class WorldScreenController : MonoBehaviour
     {
         if (currentLevel >= 5)
         {
-            SceneManager.LoadScene("Crowds Level");
+            SceneManager.LoadScene("Bird Level");
         }
     }
 
@@ -70,7 +101,7 @@ public class WorldScreenController : MonoBehaviour
     {
         if (currentLevel >= 6)
         {
-            SceneManager.LoadScene("Crowds Level");
+            SceneManager.LoadScene("Heights Level");
         }
     }
 
@@ -94,6 +125,61 @@ public class WorldScreenController : MonoBehaviour
 
     public void OpenBook()
     {
-        page1.SetActive(true);
+        if (currentLevel == 1)
+        {
+            picture1.SetActive(true);
+            tutorialDialogue.SetActive(true);
+        }
+        if (currentLevel == 2)
+        {
+            fpicture1.SetActive(true);
+            picture2.SetActive(true);
+            tutorialDialogue.SetActive(true);
+        }
+        if (currentLevel == 3)
+        {
+            fpicture1.SetActive(true);
+            fpicture2.SetActive(true);
+            picture3.SetActive(true);
+            tutorialDialogue.SetActive(true);
+        }
+        if (currentLevel == 4)
+        {
+            fpicture1.SetActive(true);
+            fpicture2.SetActive(true);
+            fpicture3.SetActive(true);
+            picture4.SetActive(true);
+            tutorialDialogue.SetActive(true);
+        }
+        if (currentLevel == 5)
+        {
+            fpicture1.SetActive(true);
+            fpicture2.SetActive(true);
+            fpicture3.SetActive(true);
+            fpicture4.SetActive(true);
+            picture5.SetActive(true);
+            tutorialDialogue.SetActive(true);
+        }
+        if (currentLevel == 6)
+        {
+            fpicture1.SetActive(true);
+            fpicture2.SetActive(true);
+            fpicture3.SetActive(true);
+            fpicture4.SetActive(true);
+            fpicture5.SetActive(true);
+            picture6.SetActive(true);
+            tutorialDialogue.SetActive(true);
+        }
+        if (currentLevel == 7)
+        {
+            fpicture1.SetActive(true);
+            fpicture2.SetActive(true);
+            fpicture3.SetActive(true);
+            fpicture4.SetActive(true);
+            fpicture5.SetActive(true);
+            fpicture6.SetActive(true);
+            tutorialDialogue.SetActive(true);
+        }
+        page1.SetActive(true);       
     }
 }
