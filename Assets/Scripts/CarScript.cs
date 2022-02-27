@@ -27,7 +27,7 @@ public class CarScript : MonoBehaviour {
             Vector2 temp = absStartPosition;
             absStartPosition = absEndPosition;
             absEndPosition = temp;
-            transform.localScale = new Vector3(-transform.localScale.x, 1, 1);
+            transform.localScale = new Vector3(-transform.localScale.x, transform.localScale.y, transform.localScale.z);
         }
 
         Vector2 direction = absEndPosition - rb.position;
