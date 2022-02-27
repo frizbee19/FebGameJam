@@ -6,6 +6,8 @@ using TMPro;
 public class EndLevelDialogue : MonoBehaviour
 {
     public Animator animator;
+    public Animator animatorb;
+    public Animator animatorc;
     public RuntimeAnimatorController controller;
     public TMP_Text textbox;
     public TMP_Text arrow;
@@ -19,11 +21,14 @@ public class EndLevelDialogue : MonoBehaviour
     [Range(2, 20)] public int second = 4;
     [Range(1, 50)] public int last = 5;
     public GameObject lvlEnder;
+    public GameObject headshotb;
+    public GameObject headshotc;
 
     public Camera mainCam;
     public Camera secondCam;
     public Camera lastCam;
     public int current_cam = 0;
+    public GameObject byebye, backupbyebye, nickelback;
 
     //used to activate/deactivate test object
     //activate through outside means probably
@@ -44,6 +49,8 @@ public class EndLevelDialogue : MonoBehaviour
             arrow.text = "";
         }
         animator.runtimeAnimatorController = controller;
+        animatorb.runtimeAnimatorController = controller;
+        animatorc.runtimeAnimatorController = controller;
     }
 
     //Adds a page of text
@@ -66,6 +73,14 @@ public class EndLevelDialogue : MonoBehaviour
                 if (animator != null && emotes.Count == pages.Count)
                 {
                     animator.SetInteger("Animation", emotes[curPage] - 1);
+                }
+                if (animatorb != null && emotes.Count == pages.Count)
+                {
+                    animatorb.SetInteger("Animation", emotes[curPage] - 1);
+                }
+                if (animatorc != null && emotes.Count == pages.Count)
+                {
+                    animatorc.SetInteger("Animation", emotes[curPage] - 1);
                 }
                 //prints the "next" arrow when at end of page except last page
                 if (curPage < pages.Count - 1)
@@ -110,6 +125,14 @@ public class EndLevelDialogue : MonoBehaviour
                 if (animator != null && emotes.Count == pages.Count)
                 {
                     animator.SetInteger("Animation", emotes[curPage]);
+                }
+                if (animatorb != null && emotes.Count == pages.Count)
+                {
+                    animatorb.SetInteger("Animation", emotes[curPage]);
+                }
+                if (animatorc != null && emotes.Count == pages.Count)
+                {
+                    animatorc.SetInteger("Animation", emotes[curPage]);
                 }
                 //writes chars at specified pace
                 elapsed += Time.deltaTime;
@@ -170,10 +193,17 @@ public class EndLevelDialogue : MonoBehaviour
             default: return;
             case (1): mainCam.enabled = false;
                 secondCam.enabled = true;
+                byebye.SetActive(false);
+                backupbyebye.SetActive(false);
+                headshotb.SetActive(true);
+
                 break;
             case (2):
                 secondCam.enabled = false;
                 lastCam.enabled = true;
+                nickelback.SetActive(true);
+                headshotb.SetActive(false);
+                headshotc.SetActive(true);
                 break;
             case (3):
                 Debug.Log("Gay Sex");

@@ -187,6 +187,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   currentLevel: 0
+  i: 2
 --- !u!4 &4739993
 Transform:
   m_ObjectHideFlags: 0
@@ -3551,7 +3552,7 @@ Camera:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 662343915}
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 2
   m_ClearFlags: 1
   m_BackGroundColor: {r: 0.19215687, g: 0.3019608, b: 0.4745098, a: 0}
@@ -4012,6 +4013,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   animator: {fileID: 1277072431}
+  animatorb: {fileID: 0}
+  animatorc: {fileID: 0}
   controller: {fileID: 0}
   textbox: {fileID: 1465832790}
   arrow: {fileID: 1662769350}
@@ -4026,10 +4029,15 @@ MonoBehaviour:
   second: 4
   last: 5
   lvlEnder: {fileID: 4739991}
+  headshotb: {fileID: 0}
+  headshotc: {fileID: 0}
   mainCam: {fileID: 1689002321}
   secondCam: {fileID: 662343916}
   lastCam: {fileID: 1786726257}
   current_cam: 0
+  byebye: {fileID: 0}
+  backupbyebye: {fileID: 0}
+  nickelback: {fileID: 0}
   textTest: {fileID: 681265260}
   isTalking: 1
 --- !u!4 &681265262
@@ -12079,7 +12087,7 @@ Camera:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1786726256}
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 2
   m_ClearFlags: 1
   m_BackGroundColor: {r: 0.19215687, g: 0.3019608, b: 0.4745098, a: 0}

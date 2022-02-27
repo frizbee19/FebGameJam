@@ -1583,10 +1583,6 @@ MonoBehaviour:
     m_Y: 206
     m_Width: 49
     m_Height: 22
-  - m_X: 150
-    m_Y: 307
-    m_Width: 873
-    m_Height: 716
   - m_X: 0
     m_Y: 341
     m_Width: 1023
