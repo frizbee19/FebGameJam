@@ -13,9 +13,14 @@ public class Platform : MonoBehaviour
     {
         if(isMoving)
         {
-            startPos = transform.position;
-            StartCoroutine(LerpPosition(positionToMoveTo, length));
+            Activate();
         }
+    }
+
+    public void Activate() {
+        startPos = transform.position;
+        StartCoroutine(LerpPosition(positionToMoveTo, length));
+
     }
     IEnumerator LerpPosition(Vector3 targetPosition, float duration)
     {
