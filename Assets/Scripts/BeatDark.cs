@@ -6,7 +6,6 @@ using UnityEngine.SceneManagement;
 public class BeatDark : MonoBehaviour
 {
     public int currentLevel;
-    public int i = 2;
     // Start is called before the first frame update
     void Start()
     {
@@ -24,12 +23,11 @@ public class BeatDark : MonoBehaviour
 
     public void BeatLevel()
     {
-        
-        if (i == currentLevel && i <=6)
+
+        if (currentLevel == 3)
         {
-            PlayerPrefs.SetInt("CurrentLevel", i+1);
+            PlayerPrefs.SetInt("CurrentLevel", 4);
             SceneManager.LoadScene("Real World");
-            Debug.Log(i);
         }
         else
         {
