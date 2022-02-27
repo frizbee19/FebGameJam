@@ -31,18 +31,18 @@ public class WorkingWallTrigger : MonoBehaviour
     }
     void OnTriggerEnter2D(Collider2D col)
     {
-        float ye = cat.transform.position.y;
-        float goaly = box.transform.localPosition.y;
-        if (ye < goaly && counter >= countOffset && col.IsTouchingLayers(layerMask))
-        {
-            cam.transform.position -= moveCam;
-            cat.transform.position -= moveCat;
-            counter = 0;
-        }
-        else if (ye >= goaly && counter > countOffset && col.IsTouchingLayers(layerMask))
+        float xe = cat.transform.position.x;
+        float goalx = box.transform.localPosition.x;
+        if (xe < goalx && counter >= countOffset)
         {
             cam.transform.position += moveCam;
             cat.transform.position += moveCat;
+            counter = 0;
+        }
+        else if (xe >= goalx && counter > countOffset)
+        {
+            cam.transform.position -= moveCam;
+            cat.transform.position -= moveCat;
 
             counter = 0;
         }
