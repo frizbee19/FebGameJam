@@ -6964,6 +6964,14 @@ PrefabInstance:
       propertyPath: isDream
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 4499622524481912705, guid: 914a54b1edcdf034cabd75345d3f04a6, type: 3}
+      propertyPath: isTalking
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4499622524481912705, guid: 914a54b1edcdf034cabd75345d3f04a6, type: 3}
+      propertyPath: audioManager
+      value: 
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 914a54b1edcdf034cabd75345d3f04a6, type: 3}
 --- !u!1 &5439994586330498304

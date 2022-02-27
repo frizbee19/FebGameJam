@@ -39,4 +39,10 @@ public class MenuController : MonoBehaviour
         Time.timeScale = 1f;
         SceneManager.LoadScene("Main Menu");
     }
+
+    public void ReturnToReal()
+    {
+        Time.timeScale = 1f;
+        SceneManager.LoadScene("Real World");
+    }
 }
