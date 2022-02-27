@@ -3,12 +3,14 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class WaterSpirit : MonoBehaviour {
-    private Transform player;
-    public BoxCollider2D boxCollider;
     public float swimSpeed = .25f;
+
+    private BoxCollider2D boxCollider;
+    private Transform player;
     private Rigidbody2D rb;
     private Vector2 movement = Vector2.zero;
     private float sizeOffset = 1;
+    private bool activated = false;
 
     void Start() {
         rb = this.GetComponent<Rigidbody2D>();
