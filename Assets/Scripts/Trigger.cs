@@ -56,8 +56,8 @@ public abstract class Trigger : MonoBehaviour
             if(forceInteract) 
             {
                 Action();
-                hasOccurred = true;
                 if(!repeatable) {
+                    hasOccurred = true;
                     isActive = false;
                 }
             }

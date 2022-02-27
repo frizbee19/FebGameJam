@@ -7,7 +7,6 @@ public class SpawnTrigger : Trigger
     [SerializeField] float despawnTimer = 10f;
     [SerializeField] GameObject entity;
     [SerializeField] Vector2 startPos;
-    private GameObject clone;
     private bool spawned;
     [SerializeField] bool respawns = false;
     [SerializeField] float respawnTime = 3f;
@@ -17,11 +16,15 @@ public class SpawnTrigger : Trigger
  
  //And function itself
      IEnumerator SpawnDespawn(){
+         GameObject clone;
+
         clone = Instantiate(entity, startPos, Quaternion.identity);
         clone.gameObject.SetActive(true);
         yield return new WaitForSeconds(despawnTimer); 
         Destroy(clone);
-        this.gameObject.SetActive(false);
+        if(!respawns) {
+            this.gameObject.SetActive(false);
+        }
  }
     public override void Action() {
         if(!spawned && !respawns) {
@@ -29,10 +32,11 @@ public class SpawnTrigger : Trigger
             StartCoroutine(SpawnDespawn());
         }
         else if(respawns) {
-            if(elapsed < respawnTime) {
+            elapsed += Time.deltaTime;
+            if(elapsed > respawnTime) {
+
                 elapsed = 0;
-                
-            StartCoroutine(SpawnDespawn());
+                StartCoroutine(SpawnDespawn());
             }
         }
     }
