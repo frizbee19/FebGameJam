@@ -506,6 +506,42 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 465430853313913524, guid: 229417a88c124ac40a6a32ba8b224303, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 465430853313913524, guid: 229417a88c124ac40a6a32ba8b224303, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 909522769}
+    - target: {fileID: 465430853313913524, guid: 229417a88c124ac40a6a32ba8b224303, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 465430853313913524, guid: 229417a88c124ac40a6a32ba8b224303, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: ResumeGame
+      objectReference: {fileID: 0}
+    - target: {fileID: 465430853313913524, guid: 229417a88c124ac40a6a32ba8b224303, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: GameOver, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 465430853313913524, guid: 229417a88c124ac40a6a32ba8b224303, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_StringArgument
+      value: ResumeGame()
+      objectReference: {fileID: 0}
+    - target: {fileID: 465430853607620548, guid: 229417a88c124ac40a6a32ba8b224303, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 909522769}
+    - target: {fileID: 465430853607620548, guid: 229417a88c124ac40a6a32ba8b224303, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: ReturnToMain
+      objectReference: {fileID: 0}
+    - target: {fileID: 465430853607620548, guid: 229417a88c124ac40a6a32ba8b224303, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: GameOver, Assembly-CSharp
+      objectReference: {fileID: 0}
     - target: {fileID: 3765277719197793240, guid: 229417a88c124ac40a6a32ba8b224303, type: 3}
       propertyPath: m_Name
       value: Game Over
@@ -557,6 +593,18 @@ PrefabInstance:
     - target: {fileID: 3765277719197793243, guid: 229417a88c124ac40a6a32ba8b224303, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7909362878412871847, guid: 229417a88c124ac40a6a32ba8b224303, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 909522769}
+    - target: {fileID: 7909362878412871847, guid: 229417a88c124ac40a6a32ba8b224303, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: ReturnToReal
+      objectReference: {fileID: 0}
+    - target: {fileID: 7909362878412871847, guid: 229417a88c124ac40a6a32ba8b224303, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: GameOver, Assembly-CSharp
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 229417a88c124ac40a6a32ba8b224303, type: 3}
@@ -7744,7 +7792,7 @@ MonoBehaviour:
   value: 0
   player: {fileID: 387672841}
   respawn: {x: -7.5, y: 6}
-  canHurt: 0
+  canHurt: 1
 --- !u!50 &1981804707
 Rigidbody2D:
   serializedVersion: 4
@@ -8133,9 +8181,9 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingLayerID: 1027733709
+  m_SortingLayer: 2
+  m_SortingOrder: 9
   m_Sprite: {fileID: -8221170716321238454, guid: d06424b435e03449d8a18a49e7790beb, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
