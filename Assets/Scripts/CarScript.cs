@@ -22,7 +22,7 @@ public class CarScript : MonoBehaviour {
         // Calculate distance to end
         Vector2 distanceToFinish = absEndPosition - rb.position;
 
-        if (distanceToFinish.magnitude < 1) {
+        if (distanceToFinish.magnitude < .02) {
             // If we're close enough to the end, reverse direction
             Vector2 temp = absStartPosition;
             absStartPosition = absEndPosition;
