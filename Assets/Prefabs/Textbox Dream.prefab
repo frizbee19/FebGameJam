@@ -291,6 +291,26 @@ PrefabInstance:
       propertyPath: isDream
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 9060944746453456260, guid: 6ea336e93a8128346aad568255a7e6af, type: 3}
+      propertyPath: pages.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 9060944746453456260, guid: 6ea336e93a8128346aad568255a7e6af, type: 3}
+      propertyPath: emotes.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 9060944746453456260, guid: 6ea336e93a8128346aad568255a7e6af, type: 3}
+      propertyPath: pages.Array.data[0]
+      value: lol
+      objectReference: {fileID: 0}
+    - target: {fileID: 9060944746453456260, guid: 6ea336e93a8128346aad568255a7e6af, type: 3}
+      propertyPath: pages.Array.data[1]
+      value: lol
+      objectReference: {fileID: 0}
+    - target: {fileID: 9060944746453456260, guid: 6ea336e93a8128346aad568255a7e6af, type: 3}
+      propertyPath: emotes.Array.data[0]
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 3758862681294202868, guid: 6ea336e93a8128346aad568255a7e6af, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 6ea336e93a8128346aad568255a7e6af, type: 3}

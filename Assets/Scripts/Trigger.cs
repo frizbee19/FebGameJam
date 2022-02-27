@@ -22,7 +22,7 @@ public abstract class Trigger : MonoBehaviour
     //checks if player is in range of the trigger
     private void OnTriggerStay2D(Collider2D other) {
         if(other.CompareTag("Player")) {
-            Debug.Log("entered");
+            //Debug.Log("entered");
             isActive = true;
         }
         // else {
@@ -39,7 +39,7 @@ public abstract class Trigger : MonoBehaviour
     private void OnTriggerExit2D(Collider2D other) {
         if(other.CompareTag("Player")) {
             isActive = false;
-            Debug.Log("exit");
+            //Debug.Log("exit");
         }
         if(forceInteract && repeatable) {
             hasOccurred = false;
@@ -56,8 +56,8 @@ public abstract class Trigger : MonoBehaviour
             if(forceInteract) 
             {
                 Action();
-                hasOccurred = true;
                 if(!repeatable) {
+                    hasOccurred = true;
                     isActive = false;
                 }
             }
@@ -65,7 +65,7 @@ public abstract class Trigger : MonoBehaviour
             else
             {
                 if(Input.GetKeyDown(KeyCode.E)) {
-                    Debug.Log("action");
+                    //Debug.Log("action");
                     Action();
                     if(!repeatable)
                     {

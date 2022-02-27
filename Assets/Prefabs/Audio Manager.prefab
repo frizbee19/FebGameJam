@@ -69,6 +69,12 @@ MonoBehaviour:
     volume: 1
     pitch: 1
     source: {fileID: 0}
+  - name: pencilbreak
+    output: SFX
+    clip: {fileID: 8300000, guid: 9354b46cec5691447aadb06c923fde35, type: 3}
+    volume: 1
+    pitch: 1
+    source: {fileID: 0}
   SFX: {fileID: -7289459987239430450, guid: c97f543260ac6cb409ed0760fe78c9a9, type: 2}
   Music: {fileID: -4387083310922404584, guid: c97f543260ac6cb409ed0760fe78c9a9, type: 2}
   Master: {fileID: 24300002, guid: c97f543260ac6cb409ed0760fe78c9a9, type: 2}

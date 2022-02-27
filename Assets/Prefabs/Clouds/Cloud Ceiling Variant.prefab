@@ -26,8 +26,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1863913792}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: 0, y: 1.21, z: 0}
+  m_LocalScale: {x: 1, y: 0.5, z: 1}
   m_Children: []
   m_Father: {fileID: 4058488523496122551}
   m_RootOrder: 1
@@ -45,6 +45,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cam: {fileID: 0}
+  offset: 0
 --- !u!61 &1863913794
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -80,7 +81,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 8525598097607813777, guid: b7f2f989c2081d545b71b393bd6a1795, type: 3}
       propertyPath: m_Name
-      value: Cloud Ceiling
+      value: Cloud Ceiling Variant
       objectReference: {fileID: 0}
     - target: {fileID: 8525598097607813804, guid: b7f2f989c2081d545b71b393bd6a1795, type: 3}
       propertyPath: m_RootOrder
