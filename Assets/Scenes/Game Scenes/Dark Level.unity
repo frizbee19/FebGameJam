@@ -8489,8 +8489,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7f3324bdaa895394db1ed827a820ab8c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  currentLevel: 0
-  i: 2
+  currentLevel: 3
+  i: 3
 --- !u!4 &1810438011
 Transform:
   m_ObjectHideFlags: 0
@@ -9658,6 +9658,10 @@ PrefabInstance:
       propertyPath: backupbyebye
       value: 
       objectReference: {fileID: 1312893925}
+    - target: {fileID: 687855467128986789, guid: 8d960d2a345fc1e469e95f87418eb26d, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1133138391673429717, guid: 8d960d2a345fc1e469e95f87418eb26d, type: 3}
       propertyPath: m_Camera
       value: 
@@ -9714,5 +9718,33 @@ PrefabInstance:
       propertyPath: audioManager
       value: 
       objectReference: {fileID: 1190348331}
+    - target: {fileID: 8373361160025088290, guid: 8d960d2a345fc1e469e95f87418eb26d, type: 3}
+      propertyPath: emotes.Array.data[2]
+      value: 11
+      objectReference: {fileID: 0}
+    - target: {fileID: 8373361160025088290, guid: 8d960d2a345fc1e469e95f87418eb26d, type: 3}
+      propertyPath: emotes.Array.data[3]
+      value: 11
+      objectReference: {fileID: 0}
+    - target: {fileID: 8373361160025088290, guid: 8d960d2a345fc1e469e95f87418eb26d, type: 3}
+      propertyPath: emotes.Array.data[4]
+      value: 11
+      objectReference: {fileID: 0}
+    - target: {fileID: 8373361160025088290, guid: 8d960d2a345fc1e469e95f87418eb26d, type: 3}
+      propertyPath: emotes.Array.data[8]
+      value: 11
+      objectReference: {fileID: 0}
+    - target: {fileID: 8373361160025088290, guid: 8d960d2a345fc1e469e95f87418eb26d, type: 3}
+      propertyPath: emotes.Array.data[9]
+      value: 11
+      objectReference: {fileID: 0}
+    - target: {fileID: 8373361160025088290, guid: 8d960d2a345fc1e469e95f87418eb26d, type: 3}
+      propertyPath: emotes.Array.data[13]
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 8373361160025088290, guid: 8d960d2a345fc1e469e95f87418eb26d, type: 3}
+      propertyPath: emotes.Array.data[14]
+      value: 11
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8d960d2a345fc1e469e95f87418eb26d, type: 3}
