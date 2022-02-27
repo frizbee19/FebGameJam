@@ -6,28 +6,21 @@ using UnityEngine.SceneManagement;
 public class BeatDark : MonoBehaviour
 {
     public int currentLevel;
+    public int i = 2;
     // Start is called before the first frame update
     void Start()
     {
         currentLevel = PlayerPrefs.GetInt("CurrentLevel");
     }
 
-    // Update is called once per frame
-    /*void Update()
-    {
-        if (Input.GetButtonDown("Jump"))
-        {
-            BeatLevel();
-        }
-    }*/
-
     public void BeatLevel()
     {
 
-        if (currentLevel == 3)
+        if (i == currentLevel && i <= 6)
         {
-            PlayerPrefs.SetInt("CurrentLevel", 4);
+            PlayerPrefs.SetInt("CurrentLevel", i + 1);
             SceneManager.LoadScene("Real World");
+            Debug.Log(i);
         }
         else
         {
