@@ -1,3 +1,23 @@
+# Drawn to Reality
+
+A Unity game by:
+
+- Zoe Johnson
+    - Director
+    - Lead Designer
+- Benjamin Cerda (@MindfulMinun)
+    - Developer
+    - Sound Mixing
+- Jacob Conrady
+    - Developer
+- Rizvee Ayub
+    - Developer
+    - Musician
+- Angel Gutierrez
+    - Musician
+- Dani Levy (@2xapostrophe)
+    - Artist
+
 ## Clone the project
 
 1. Open *GitKraken*
