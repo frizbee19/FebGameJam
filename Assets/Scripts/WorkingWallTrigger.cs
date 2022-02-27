@@ -8,7 +8,7 @@ public class WorkingWallTrigger : MonoBehaviour
     public GameObject cat;
     public BoxCollider2D box;
     private int counter = 0;
-    [Range(-25f, 25f)] public float camOffset = 10f;
+    [Range(-50f, 50f)] public float camOffset = 10f;
     [Range(-15f, 15f)] public float catOffset = 5f;
     [Range(5, 180)] public int countOffset = 10;
     private Vector3 moveCam;
