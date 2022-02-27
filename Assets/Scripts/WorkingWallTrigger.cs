@@ -8,8 +8,8 @@ public class WorkingWallTrigger : MonoBehaviour
     public GameObject cat;
     public BoxCollider2D box;
     private int counter = 0;
-    [Range(1f, 25f)] public float camOffset = 10f;
-    [Range(1f, 15f)] public float catOffset = 5f;
+    [Range(-25f, 25f)] public float camOffset = 10f;
+    [Range(-15f, 15f)] public float catOffset = 5f;
     [Range(5, 180)] public int countOffset = 10;
     private Vector3 moveCam;
     private Vector3 moveCat;
@@ -33,13 +33,13 @@ public class WorkingWallTrigger : MonoBehaviour
     {
         float xe = cat.transform.position.x;
         float goalx = box.transform.localPosition.x;
-        if (xe < goalx && counter >= countOffset)
+        if (xe < goalx && counter >= countOffset && (col.gameObject.tag == "Player"))
         {
             cam.transform.position += moveCam;
             cat.transform.position += moveCat;
             counter = 0;
         }
-        else if (xe >= goalx && counter > countOffset)
+        else if (xe >= goalx && counter > countOffset && (col.gameObject.tag == "Player"))
         {
             cam.transform.position -= moveCam;
             cat.transform.position -= moveCat;

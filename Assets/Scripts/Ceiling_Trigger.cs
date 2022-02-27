@@ -10,7 +10,7 @@ public class Ceiling_Trigger : MonoBehaviour
     private int counter = 0;
     [Range (1f,25f)]public float camOffset = 10f;
     [Range (1f,15f)] public float catOffset = 5f;
-    [Range(5, 180)] public int countOffset = 10;
+    [Range(3, 180)] public int countOffset = 10;
     private LayerMask layerMask;
     private Vector3 moveCam;
     private Vector3 moveCat;
@@ -32,13 +32,13 @@ public class Ceiling_Trigger : MonoBehaviour
     {
         float ye = cat.transform.position.y;
         float goaly = box.transform.position.y;
-        if ((ye < goaly && counter >= countOffset))
+        if ((ye < goaly && counter >= countOffset) && (col.gameObject.tag == "Player"))
         {
             cam.transform.position += moveCam;
             cat.transform.position += moveCat;
             counter = 0;
         }
-        else if ((ye >= goaly && counter > countOffset))
+        else if ((ye >= goaly && counter > countOffset) && (col.gameObject.tag == "Player"))
         {
             cam.transform.position -= moveCam;
             cat.transform.position -= moveCat;
