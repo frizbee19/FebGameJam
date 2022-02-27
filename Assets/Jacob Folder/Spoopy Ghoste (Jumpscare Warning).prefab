@@ -25,8 +25,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 776050268538294905}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.191, y: -0.063, z: 0}
-  m_LocalScale: {x: 0.16666667, y: 0.16666667, z: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 3103723802129481039}
   m_RootOrder: 0
@@ -44,7 +44,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: -0.09, y: -0.1}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -55,7 +55,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 2.79, y: 6.9}
+  m_Size: {x: 0.46, y: 0.54}
   m_EdgeRadius: 0
 --- !u!1 &3103723802129481037
 GameObject:
@@ -69,6 +69,7 @@ GameObject:
   - component: {fileID: 3103723802129481036}
   - component: {fileID: 3103723802129481033}
   - component: {fileID: 3103723802129481074}
+  - component: {fileID: 1331037034804418945}
   m_Layer: 8
   m_Name: Spoopy Ghoste (Jumpscare Warning)
   m_TagString: Untagged
@@ -131,7 +132,7 @@ SpriteRenderer:
   m_SortingLayerID: 1027733709
   m_SortingLayer: 2
   m_SortingOrder: 0
-  m_Sprite: {fileID: -5029764186598712489, guid: 1a0db7ae73c9e43ac856b25d6ad47dbc, type: 3}
+  m_Sprite: {fileID: -4819166152505672304, guid: 11f1c18ac45a940769c85c3c17315fb4, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -180,3 +181,23 @@ MonoBehaviour:
   cat: {fileID: 0}
   ball: 0
   mvt: {fileID: 0}
+  anim: {fileID: 1331037034804418945}
+--- !u!95 &1331037034804418945
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3103723802129481037}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 11a230482c553484f92721b47ab590a2, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0

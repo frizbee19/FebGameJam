@@ -230,6 +230,7 @@ GameObject:
   - component: {fileID: 5439994587591701613}
   - component: {fileID: 5439994587591701612}
   - component: {fileID: 4726786242617749443}
+  - component: {fileID: 2606543448142443937}
   m_Layer: 3
   m_Name: Char Movement
   m_TagString: Player
@@ -276,7 +277,7 @@ MonoBehaviour:
     m_Bits: 695
   m_GroundCheck: {fileID: 5439994587561021437}
   m_CeilingCheck: {fileID: 5439994588348099274}
-  m_CrouchDisableCollider: {fileID: 5439994587591701586}
+  m_CrouchDisableCollider: {fileID: 2606543448142443937}
   m_Grounded: 0
   m_FacingRight: 1
   m_Velocity: {x: 0, y: 0, z: 0}
@@ -389,6 +390,32 @@ MonoBehaviour:
   OnHit:
     m_PersistentCalls:
       m_Calls: []
+--- !u!61 &2606543448142443937
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5439994587591701614}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0.33}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 0.25, y: 0.25}
+  m_EdgeRadius: 0
 --- !u!1 &5439994588348099269
 GameObject:
   m_ObjectHideFlags: 0

@@ -4,11 +4,11 @@ using UnityEngine;
 
 public class BookTrigger : Trigger
 {
-    public GameObject levelSelect;
+    public GameObject bookFinder;
     
 
     public override void Action()
     {
-        levelSelect.SetActive(true);
+        bookFinder.GetComponent<WorldScreenController>().OpenBook();
     }
 }

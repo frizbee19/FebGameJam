@@ -17,9 +17,9 @@ public class Health : MonoBehaviour {
     }
 
     void Update() {
-        if (Input.GetKeyDown(KeyCode.E)) {
-            takeHit();
-        }
+        // if (Input.GetKeyDown(KeyCode.)) {
+        //     takeHit();
+        // }
     }
 
     public void takeHit() {
