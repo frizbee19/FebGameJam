@@ -12,7 +12,7 @@ public class MoveOnToNextAreaScript : Trigger
     {
         isTrigger = true;
         box.isTrigger = true;
-        Debug.Log(isTrigger);
+        //Debug.Log(isTrigger);
     }
 
 
