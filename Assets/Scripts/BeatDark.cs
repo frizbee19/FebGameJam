@@ -21,7 +21,7 @@ public class BeatDark : MonoBehaviour
         }
     }*/
 
-    void BeatLevel()
+    public void BeatLevel()
     {
 
         if (currentLevel == 3)
