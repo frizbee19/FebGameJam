@@ -3069,8 +3069,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7f3324bdaa895394db1ed827a820ab8c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  currentLevel: 0
-  i: 2
+  currentLevel: 4
+  i: 4
 --- !u!4 &900937520
 Transform:
   m_ObjectHideFlags: 0
@@ -5523,7 +5523,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1810438011}
-  - component: {fileID: 1810438010}
   m_Layer: 0
   m_Name: Finish Level
   m_TagString: Untagged
@@ -5531,19 +5530,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1810438010
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1810438009}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e1bd6789c74094048813e24b1c43ed5d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  currentLevel: 0
 --- !u!4 &1810438011
 Transform:
   m_ObjectHideFlags: 0

@@ -21,6 +21,7 @@ public class EndLevelDialogue : MonoBehaviour
     [Range(2, 20)] public int second = 4;
     [Range(1, 50)] public int last = 5;
     public GameObject lvlEnder;
+    public GameObject headshota;
     public GameObject headshotb;
     public GameObject headshotc;
 
@@ -195,6 +196,7 @@ public class EndLevelDialogue : MonoBehaviour
                 secondCam.enabled = true;
                 byebye.SetActive(false);
                 backupbyebye.SetActive(false);
+                headshota.SetActive(false);
                 headshotb.SetActive(true);
 
                 break;
