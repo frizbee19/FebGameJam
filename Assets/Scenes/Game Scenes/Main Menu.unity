@@ -5825,7 +5825,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Project Dream
+  m_text: drawn to reality
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 074edeee44f15aa49af02fa13191eff8, type: 2}
   m_sharedMaterial: {fileID: 3848210637444497033, guid: 074edeee44f15aa49af02fa13191eff8, type: 2}
