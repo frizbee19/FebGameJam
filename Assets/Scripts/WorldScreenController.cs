@@ -100,7 +100,7 @@ public class WorldScreenController : MonoBehaviour
     {
         if (currentLevel >= 6)
         {
-            SceneManager.LoadScene("Heights Level");
+            SceneManager.LoadScene("Crowds Level");
         }
     }
 

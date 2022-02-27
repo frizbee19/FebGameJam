@@ -11,6 +11,8 @@ public class Health : MonoBehaviour {
     public bool isDead;
     public UnityEvent OnDead = new UnityEvent();
     public UnityEvent OnHit = new UnityEvent();
+    public GameObject three,two,one,zero;
+    public AudioManager audioManager;
 
     void Start() {
         currentHealth = startingHealth;
@@ -27,6 +29,22 @@ public class Health : MonoBehaviour {
         currentHealth = Mathf.Clamp(currentHealth - 1, 0, startingHealth);
         isDead = currentHealth <= 0;
         OnHit.Invoke();
+        if (currentHealth == 2)
+        {
+            three.SetActive(false);
+            two.SetActive(true);
+        }
+        if (currentHealth == 1)
+        {
+            two.SetActive(false);
+            one.SetActive(true);
+        }
+        if (currentHealth == 0)
+        {
+            one.SetActive(false);
+            zero.SetActive(true);
+        }
+            audioManager.Play("pencilbreak");
         if (isDead) OnDead.Invoke();
         StartCoroutine(damageTimer());
     }
