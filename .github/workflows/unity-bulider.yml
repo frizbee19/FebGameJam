@@ -5,6 +5,7 @@ jobs:
   build:
     name: Unity Builder
     runs-on: ubuntu-latest
+    steps:
       # Checkout
       - uses: actions/checkout@v2
 
